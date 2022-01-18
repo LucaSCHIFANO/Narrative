@@ -13,19 +13,22 @@ public class S_ListTexts : MonoBehaviour
     private string newSentence;
     private string removeSent;
     private int several;
-
     private int histoire;
-
+    private bool waitSentences;
 
     // Start is called before the first frame update
     void Start()
     {
         //PlayerPrefs.DeleteAll();
+
+        //First sentences
         BasicSentences();
     }
 
     public void AddSentence()
     {
+        BasicSentences();
+
         newSentence = PlayerPrefs.GetString("textValue");
         listePhrases.Add(newSentence);
     }
@@ -38,34 +41,48 @@ public class S_ListTexts : MonoBehaviour
 
     public void BasicSentences()
     {
-        switch (histoire)
+        if(waitSentences == false)
         {
-            case 0:
-                listePhrases.Add(listeBasicPhrases[0]);
-                listePhrases.Add(listeBasicPhrases[1]);
-                break;
-
-            case 1:
-                listePhrases.Add(listeBasicPhrases[2]);
-                listePhrases.Add(listeBasicPhrases[3]);
-                break;
-
-            case 2:
-                listePhrases.Add(listeBasicPhrases[4]);
-                listePhrases.Add(listeBasicPhrases[5]);
-                break;
-            case 3:
-                listePhrases.Add(listeBasicPhrases[6]);
-                listePhrases.Add(listeBasicPhrases[7]);
-                break;
-            case 4:
-                listePhrases.Add(listeBasicPhrases[8]);
-                listePhrases.Add(listeBasicPhrases[9]);
-                break;
-            case 5:
-                listePhrases.Add(listeBasicPhrases[10]);
-                break;
+            switch (histoire)
+            {
+                case 0:
+                    for (int i = 0; i < 3; i++)
+                    {
+                        listePhrases.Add(listeBasicPhrases[i]);
+                    }
+                    break;
+                case 1:
+                    for (int i = 3; i < 6; i++)
+                    {
+                        listePhrases.Add(listeBasicPhrases[i]);
+                    }
+                    break;
+                case 2:
+                    for (int i = 6; i < 9; i++)
+                    {
+                        listePhrases.Add(listeBasicPhrases[i]);
+                    }
+                    break;
+                case 3:
+                    for (int i = 9; i < 12; i++)
+                    {
+                        listePhrases.Add(listeBasicPhrases[i]);
+                    }
+                    break;
+            }
         }
 
+        waitSentences = true;
+
     }
+
+    public void RemoveBasic()
+    {
+        listePhrases.Clear();
+
+        waitSentences = false;
+        histoire += 1;
+
+    }
+
 }
