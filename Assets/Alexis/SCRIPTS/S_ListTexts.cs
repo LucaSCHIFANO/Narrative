@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class S_ListTexts : MonoBehaviour
 {
+
+    [SerializeField] private GameObject refText = null;
+    [SerializeField] private Transform emptyTextTransf;
+
     [SerializeField] private List<string> listePhrases;
 
     [TextArea]
@@ -16,6 +20,7 @@ public class S_ListTexts : MonoBehaviour
     private int histoire;
     private bool waitSentences;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,7 @@ public class S_ListTexts : MonoBehaviour
 
         //First sentences
         BasicSentences();
+
     }
 
     public void AddSentence()
@@ -73,7 +79,17 @@ public class S_ListTexts : MonoBehaviour
         }
 
         waitSentences = true;
+    }
 
+    public void CreatePrefabChoice()
+    {
+        for (int i = 0; i < listePhrases.Count; i++)
+        {
+            string test = listePhrases[i];
+            GameObject refParent = Instantiate(refText, emptyTextTransf.position, Quaternion.identity);
+            refParent.transform.SetParent(emptyTextTransf);
+            refParent.transform.GetChild(0).GetComponent<Text>().text = test;
+        }
     }
 
     public void RemoveBasic()
