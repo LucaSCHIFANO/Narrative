@@ -51,14 +51,14 @@ public class ItemSentence : MonoBehaviour
         if (Vector3.Distance(initialTrans, transform.position) < 0.25f && okayTimer)
         {
             Debug.Log("Audible, raconte moi une histoire");
-            image.color = baseColor;
+            Letter.Instance.setNewImage(image.sprite, baseColor, gameObject.name);
         }
         
+        image.color = baseColor;
         initialTrans = Vector3.zero;
         
 
     }
-    //mettre avec le tps aussi
     
 
 }
