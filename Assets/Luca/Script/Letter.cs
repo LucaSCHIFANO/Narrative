@@ -11,32 +11,34 @@ public class Letter : MonoBehaviour
     
     
     //Reference
-    public Image image;
+    public ItemSentence object0;
     private Sprite baseSprite;
     public GameObject confirmButton;
 
-    private string theName;
+    public string theName;
     
     public void Awake()
     {
         _instance = this;
-        baseSprite = image.sprite;
+        baseSprite = object0.image.sprite;
         
         confirmButton.SetActive(false);
     }
     
     
-    public void setNewImage(Sprite _image, string _name)
+    public void setNewImage(ItemSentence go, string _name)
     {
         if (_name != theName)
         {
-            image.sprite = _image;
-            //image.color = color;
+            object0.image.sprite = go.image.sprite;
+            object0.text.text = go.text.text;
             theName = _name;
+
         }
         else
         {
-            image.sprite = baseSprite;
+            object0.image.sprite = baseSprite;
+            object0.text.text = "";
             theName = "";
         }
 

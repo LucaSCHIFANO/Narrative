@@ -14,6 +14,11 @@ public class ItemSentence : MonoBehaviour
 
     private float timer;
     private bool okayTimer;
+    
+    
+    //GetCompo
+    public Image image;
+    public Text text;
 
 
     private void Start()
@@ -49,7 +54,7 @@ public class ItemSentence : MonoBehaviour
         if (Vector3.Distance(initialTrans, transform.position) < 0.25f && okayTimer)
         {
             Debug.Log("Audible, raconte moi une histoire");
-            //Letter.Instance.setNewImage(image.sprite, gameObject.name);
+            Letter.Instance.setNewImage(this ,gameObject.name);
         }
         
         //image.color = baseColor;
