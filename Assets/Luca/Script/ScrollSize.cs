@@ -5,13 +5,36 @@ using UnityEngine.UI;
 
 public class ScrollSize : MonoBehaviour
 {
+    // Instance -------------------------------------
+    private static ScrollSize _instance = null;
+    public static ScrollSize Instance { get => _instance; }
+    
+    
+    
     public List<GameObject> scrollObject = new List<GameObject>();
     
-    void Start()
+    
+    public void Awake()
     {
-        /*RectTransform rt = GetComponent<RectTransform>();
+        _instance = this;
+    }
 
-        rt.offsetMax = new Vector2(rt.offsetMin.x, 175f * (scrollObject.Count - 3));*/
+    public void destroyList()
+    {
+        for (int i = 0; i < scrollObject.Count; i++)
+        {
+            Destroy(scrollObject[i]); 
+        }
+        
+        scrollObject.Clear();
+    }
+    
+    
+    public void resizeScrolling()
+    {
+        RectTransform rt = GetComponent<RectTransform>();
+
+        rt.offsetMax = new Vector2(rt.offsetMin.x, 175f * (scrollObject.Count - 3));
 
     }
     
