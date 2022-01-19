@@ -11,7 +11,7 @@ public class ScrollSize : MonoBehaviour
     {
         RectTransform rt = GetComponent<RectTransform>();
 
-        rt.offsetMax = new Vector2(rt.offsetMin.x, 177.5f * (scrollObject.Count - 3));
+        rt.offsetMax = new Vector2(rt.offsetMin.x, 175f * (scrollObject.Count - 3));
 
     }
     
