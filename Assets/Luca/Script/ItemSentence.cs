@@ -6,9 +6,8 @@ using UnityEngine.UI;
 
 public class ItemSentence : MonoBehaviour
 {
-
-    private Image image;
-    private Color baseColor;
+    
+    //private Color baseColor;
     
     private bool clicked;
     private Vector3 initialTrans;
@@ -19,8 +18,7 @@ public class ItemSentence : MonoBehaviour
 
     private void Start()
     {
-        image = GetComponent<Image>();
-        baseColor = image.color;
+        
     }
 
     private void Update()
@@ -34,7 +32,7 @@ public class ItemSentence : MonoBehaviour
         {
             okayTimer = false;
             timer = 0;
-            //image.color = baseColor;
+
         }
     }
 
@@ -42,7 +40,7 @@ public class ItemSentence : MonoBehaviour
     {
         initialTrans = transform.position;
         okayTimer = true;
-        image.color = new Color(0.5f, 0.5f, 0.5f);
+
 
     }
 
@@ -51,10 +49,10 @@ public class ItemSentence : MonoBehaviour
         if (Vector3.Distance(initialTrans, transform.position) < 0.25f && okayTimer)
         {
             Debug.Log("Audible, raconte moi une histoire");
-            Letter.Instance.setNewImage(image.sprite, baseColor, gameObject.name);
+            //Letter.Instance.setNewImage(image.sprite, gameObject.name);
         }
         
-        image.color = baseColor;
+        //image.color = baseColor;
         initialTrans = Vector3.zero;
         
 

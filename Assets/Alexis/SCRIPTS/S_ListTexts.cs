@@ -28,6 +28,8 @@ public class S_ListTexts : MonoBehaviour
 
         //First sentences
         BasicSentences();
+        
+        CreatePrefabChoice();
 
     }
 
@@ -88,7 +90,9 @@ public class S_ListTexts : MonoBehaviour
             string test = listePhrases[i];
             GameObject refParent = Instantiate(refText, emptyTextTransf.position, Quaternion.identity);
             refParent.transform.SetParent(emptyTextTransf);
-            refParent.transform.GetChild(0).GetComponent<Text>().text = test;
+            refParent.transform.GetChild(1).GetComponent<Text>().text = test;
+
+            refParent.transform.localScale = new Vector3(1, 1, 1); // :)
         }
     }
 

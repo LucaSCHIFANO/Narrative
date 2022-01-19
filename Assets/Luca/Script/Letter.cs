@@ -26,12 +26,12 @@ public class Letter : MonoBehaviour
     }
     
     
-    public void setNewImage(Sprite _image, Color color, string _name)
+    public void setNewImage(Sprite _image, string _name)
     {
         if (_name != theName)
         {
             image.sprite = _image;
-            image.color = color;
+            //image.color = color;
             theName = _name;
         }
         else
