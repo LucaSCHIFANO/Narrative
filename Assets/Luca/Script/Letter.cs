@@ -15,7 +15,7 @@ public class Letter : MonoBehaviour
     private Sprite baseSprite;
     public GameObject confirmButton;
 
-    public string theName;
+    private string theName;
     
     public void Awake()
     {
