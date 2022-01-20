@@ -15,6 +15,9 @@ public class Letter : MonoBehaviour
     private Sprite baseSprite;
     public GameObject confirmButton;
 
+    public GameObject phase1;
+    public GameObject phase2;
+
     public string theName;
     
     public void Awake()
@@ -51,5 +54,13 @@ public class Letter : MonoBehaviour
         {
             confirmButton.SetActive(true);
         }
+    }
+
+
+
+    public void sendLetter()
+    {
+        phase1.SetActive(false);   
+        phase2.SetActive(true);   
     }
 }
