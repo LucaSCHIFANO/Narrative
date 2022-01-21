@@ -14,6 +14,9 @@ public class S_ClickableObject : MonoBehaviour
     [SerializeField] private GameObject canInteract;
     [SerializeField] private Button refButton;
 
+    [SerializeField] private int friendS;
+    [SerializeField] private int loveS;
+
     private S_ListTexts callFunction;
 
     // Start is called before the first frame update
@@ -40,7 +43,7 @@ public class S_ClickableObject : MonoBehaviour
 
         //Save and send it
         SaveValues();
-        callFunction.AddSentence();
+        callFunction.AddNewSentence(textBase, loveS, friendS);
 
 
         //Destroy(this.gameObject);
@@ -48,8 +51,10 @@ public class S_ClickableObject : MonoBehaviour
 
     private void SaveValues()
     {
-        PlayerPrefs.SetString("textValue", textBase);
+        //PlayerPrefs.SetString("textValue", textBase);
         PlayerPrefs.SetInt("severalValue", severalObjects);
+        //PlayerPrefs.SetInt("FriendsValue", friendS);
+        //PlayerPrefs.SetInt("LoveValue", loveS);
         PlayerPrefs.Save();
     }
 

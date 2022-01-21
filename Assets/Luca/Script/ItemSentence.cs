@@ -20,10 +20,13 @@ public class ItemSentence : MonoBehaviour
     public Image image;
     public Text text;
 
+    //Scoring
+    public int friendS;
+    public int loveS;
 
     private void Start()
     {
-        
+
     }
 
     private void Update()
@@ -63,5 +66,10 @@ public class ItemSentence : MonoBehaviour
 
     }
     
+    public void SetScore(int loveS = 0, int friendS = 0)
+    {
+        this.loveS = loveS;
+        this.friendS = friendS;
+    }
 
 }

@@ -262,6 +262,8 @@ MonoBehaviour:
   imDone: 0
   canInteract: {fileID: 2448980622395170691}
   refButton: {fileID: 2448980622938474293}
+  friendS: 1
+  loveS: 1
 --- !u!1 &2448980623309371515
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,9 +14,12 @@ public class Letter : MonoBehaviour
     public ItemSentence object0;
     private Sprite baseSprite;
     public GameObject confirmButton;
+    [SerializeField] private S_ListTexts refList;
 
     public GameObject phase1;
     public GameObject phase2;
+
+    private int friendS = 0, loveS = 0;
 
     public string theName;
     
@@ -36,7 +39,8 @@ public class Letter : MonoBehaviour
             object0.image.sprite = go.image.sprite;
             object0.text.text = go.text.text;
             theName = _name;
-
+            friendS = go.friendS;
+            loveS = go.loveS;
         }
         else
         {
@@ -55,7 +59,8 @@ public class Letter : MonoBehaviour
     public void sendLetter()
     {
         phase1.SetActive(false);   
-        phase2.SetActive(true);   
+        phase2.SetActive(true);
+        EScoreManager.Instance.IncrementScore(loveS,friendS);
     }
 
     public void AvoidLastChoice()
