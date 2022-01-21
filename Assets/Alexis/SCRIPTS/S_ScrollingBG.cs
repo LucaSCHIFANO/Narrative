@@ -18,18 +18,23 @@ public class S_ScrollingBG : MonoBehaviour
     void Start()
     {
 
+
+    }
+
+    public void OnEnable()
+    {
         for (int i = 0; i < initialGameObject.Count; i++)
         {
             initialPosition.Add(Vector3.zero);
             initialPosition[i] = initialGameObject[i].GetComponent<RectTransform>().transform.position;
         }
-        
-        
-        time = Vector2.Distance(transform.position,pointBase.position) / speed;
+
+
+        time = Vector2.Distance(transform.position, pointBase.position) / speed;
         transform.DOMove(pointBase.position, time);
         StartCoroutine(Waitfond());
     }
-    
+
     IEnumerator Waitfond ()
     {
         yield return new WaitForSeconds(time);

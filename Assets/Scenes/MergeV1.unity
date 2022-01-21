@@ -999,7 +999,7 @@ MonoBehaviour:
   initialGameObject: []
   initialPosition: []
   pointBase: {fileID: 2001478937}
-  speed: 2
+  speed: 5
   time: 0
   phase2: {fileID: 0}
   phase3: {fileID: 0}
@@ -2510,7 +2510,7 @@ MonoBehaviour:
   initialGameObject: []
   initialPosition: []
   pointBase: {fileID: 2001478937}
-  speed: 2
+  speed: 5
   time: 0
   phase2: {fileID: 0}
   phase3: {fileID: 0}
@@ -2805,6 +2805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phase1: {fileID: 959775885}
   refList: {fileID: 96539567}
+  refLetter: {fileID: 1653201296}
 --- !u!1 &1241847407
 GameObject:
   m_ObjectHideFlags: 0

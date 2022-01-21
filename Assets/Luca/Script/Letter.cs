@@ -40,20 +40,14 @@ public class Letter : MonoBehaviour
         }
         else
         {
-            object0.image.sprite = baseSprite;
-            object0.text.text = "";
-            theName = "";
+            AvoidLastChoice();
         }
 
 
-        if (theName == "")
-        {
-            confirmButton.SetActive(false);
-        }
-        else
-        {
-            confirmButton.SetActive(true);
-        }
+        if (theName == "") confirmButton.SetActive(false);
+        
+        else confirmButton.SetActive(true);
+        
     }
 
 
@@ -62,5 +56,13 @@ public class Letter : MonoBehaviour
     {
         phase1.SetActive(false);   
         phase2.SetActive(true);   
+    }
+
+    public void AvoidLastChoice()
+    {
+        object0.image.sprite = baseSprite;
+        object0.text.text = "";
+        theName = "";
+        confirmButton.SetActive(false);
     }
 }
