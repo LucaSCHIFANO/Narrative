@@ -92,7 +92,7 @@ public class S_ListTexts : MonoBehaviour
             refParent.transform.SetParent(emptyTextTransf);
             refParent.transform.GetChild(1).GetComponent<Text>().text = test;
 
-            refParent.transform.localScale = new Vector3(1, 1, 1); // :)
+            refParent.transform.localScale = new Vector3(1, 1, 1); // :) wtf
             refParent.name = "Item (" + i + ")";
             ScrollSize.Instance.scrollObject.Add(refParent);
         }

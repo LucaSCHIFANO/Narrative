@@ -16,21 +16,18 @@ public class S_MovePara : MonoBehaviour
     private float speed;
 
     // Start is called before the first frame update
-    void Start()
-    {
 
-    }
 
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(Vector3.left * speed);
+        transform.Translate(Vector3.left * speed);
     }
 
-    public void OnBecameVisible()
+    void Start()
     {
         Debug.Log("sdsdfsfsqfqsfqssfqdseqfd");
-        switch (value) //Flèche de droite + enum = mets tout direct
+        switch (value) //FlÃ¨che de droite + enum = mets tout direct
         {
             case FondValue.FOREGROUND:
                 speed = 0.05f;
