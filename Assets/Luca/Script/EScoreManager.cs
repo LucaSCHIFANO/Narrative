@@ -15,7 +15,7 @@ public class EScoreManager : MonoBehaviour
     public void Awake()
     {
         _instance = this;
-
+        friendshipS = 5;
     }
     // Start is called before the first frame update
     void Start()
@@ -35,6 +35,10 @@ public class EScoreManager : MonoBehaviour
         loveshipS += loveS; 
         Debug.Log("le score amitié : " + friendshipS + " le score amour : " + loveshipS);
 
+        PlayerPrefs.SetInt("friendValue", friendshipS);
+        PlayerPrefs.SetInt("loveValue", loveshipS);
+        PlayerPrefs.Save();
     }
+
 
 }
