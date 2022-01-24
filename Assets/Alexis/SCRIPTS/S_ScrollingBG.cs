@@ -14,6 +14,8 @@ public class S_ScrollingBG : MonoBehaviour
     public GameObject phase2;
     public GameObject phase3;
 
+    public Avion avion;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class S_ScrollingBG : MonoBehaviour
 
         time = Vector2.Distance(transform.position, pointBase.position) / speed;
         transform.DOMove(pointBase.position, time);
+        avion.flyLittlePlane(time);
         StartCoroutine(Waitfond());
     }
 
