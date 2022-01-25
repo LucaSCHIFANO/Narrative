@@ -4067,7 +4067,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialGameObject:
-  - {fileID: 1033546717}
+  - {fileID: 640100429}
+  - {fileID: 675518973}
   initialPosition: []
   pointBase: {fileID: 2001478937}
   speed: 3.5
@@ -4291,7 +4292,7 @@ RectTransform:
   m_GameObject: {fileID: 675518973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1307541285}
   m_RootOrder: 6
@@ -4812,7 +4813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5057164474325253889, guid: 755ece6d881507c47b0f191e5f45138f, type: 3}
       propertyPath: value
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755ece6d881507c47b0f191e5f45138f, type: 3}
@@ -7271,11 +7272,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028052008}
   m_CullTransparentMesh: 1
---- !u!1 &1033546717 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2448980623137984767, guid: 755ece6d881507c47b0f191e5f45138f, type: 3}
-  m_PrefabInstance: {fileID: 741207105}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1048450399
 GameObject:
   m_ObjectHideFlags: 0
@@ -11043,6 +11039,9 @@ MonoBehaviour:
   - {fileID: 640100429}
   - {fileID: 315219084}
   - {fileID: 970124849}
+  lancerList:
+  - {fileID: 1702691738}
+  - {fileID: 623313050}
   theName: 
 --- !u!1 &1680705242
 GameObject:

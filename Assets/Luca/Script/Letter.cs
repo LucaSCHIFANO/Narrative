@@ -20,6 +20,7 @@ public class Letter : MonoBehaviour
     public GameObject phase2;
 
     [SerializeField] private List<GameObject> periodList = new List<GameObject>();
+    [SerializeField] private List<GameObject> lancerList = new List<GameObject>();
 
     private int friendS = 0, path = 0, step = 0;
 
@@ -73,21 +74,33 @@ public class Letter : MonoBehaviour
         if (numberOfLetterSend < 2)
         {
             periodList[0].SetActive(true);
-            
-            periodList[0].transform.GetChild(numberOfLetterSend).gameObject.SetActive(true);
+
+            foreach (var child in lancerList)
+            {
+                if(lancerList.IndexOf(child) == numberOfLetterSend) child.SetActive(true);
+                else child.SetActive(false);
+            }
 
         }
         else if (numberOfLetterSend < 5)
         {
             periodList[1].SetActive(true);
             
-            periodList[0].transform.GetChild(numberOfLetterSend - 2).gameObject.SetActive(true);
+            foreach (var child in lancerList)
+            {
+                if(lancerList.IndexOf(child) == numberOfLetterSend) child.SetActive(true);
+                else child.SetActive(false);
+            }
         }
         else
         {
             periodList[2].SetActive(true);
             
-            periodList[0].transform.GetChild(numberOfLetterSend - 5).gameObject.SetActive(true);
+            foreach (var child in lancerList)
+            {
+                if(lancerList.IndexOf(child) == numberOfLetterSend) child.SetActive(true);
+                else child.SetActive(false);
+            }
         }
 
         numberOfLetterSend++;
