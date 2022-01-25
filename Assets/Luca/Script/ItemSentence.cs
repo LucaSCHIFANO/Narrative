@@ -57,7 +57,7 @@ public class ItemSentence : MonoBehaviour
     {
         if (Vector3.Distance(initialTrans, transform.position) < 0.25f && okayTimer)
         {
-            Debug.Log("Audible, raconte moi une histoire");
+            //Debug.Log("Audible, raconte moi une histoire");
             Letter.Instance.setNewImage(this ,gameObject.name);
         }
         

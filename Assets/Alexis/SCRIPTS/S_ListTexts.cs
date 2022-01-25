@@ -19,6 +19,9 @@ public class S_ListTexts : MonoBehaviour
     [SerializeField] private List<S_ScriptTestStruct> actuallyStruct;
     [SerializeField] private List<S_ScriptTestStruct> basicStruct;
 
+    [TextArea]
+    public List<string> answers = new List<string>();
+
     //refs
     public ItemSentence refItem;
 
@@ -66,7 +69,7 @@ public class S_ListTexts : MonoBehaviour
             {
                 for (int i = value; i < value + valueStep; i++)
                 {
-                    print(i);
+
                     actuallyStruct.Add(basicStruct[i]);
                 }
 
@@ -80,40 +83,6 @@ public class S_ListTexts : MonoBehaviour
 
                 }
             }
-
-
-
-
-            //switch (value)
-            //{
-            //    case 0:
-            //        for (int i = 0; i < 3; i++)
-            //        {
-            //            //listePhrases.Add(listeBasicPhrases[i]);
-
-            //            actuallyStruct.Add(basicStruct[i]);
-
-            //        }
-            //        break;
-            //    case 1:
-            //            actuallyStruct.Add(basicStruct[3]);
-            //        break;
-            //    case 2:
-            //        for (int i = 3; i < 5; i++)
-            //        {
-
-            //            actuallyStruct.Add(basicStruct[i]);
-
-            //        }
-            //        break;
-            //    case 3:
-            //        actuallyStruct.Add(basicStruct[3]);
-            //        break;
-
-
-
-
-            //}
         }
 
         waitSentences = true;
