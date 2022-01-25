@@ -19,9 +19,13 @@ public class Letter : MonoBehaviour
     public GameObject phase1;
     public GameObject phase2;
 
+    [SerializeField] private List<GameObject> periodList = new List<GameObject>();
+    [SerializeField] private List<GameObject> lancerList = new List<GameObject>();
+
     private int friendS = 0, path = 0, step = 0;
 
     public string theName;
+    private int numberOfLetterSend;
     
     public void Awake()
     {
@@ -59,9 +63,47 @@ public class Letter : MonoBehaviour
 
     public void sendLetter()
     {
+        periodList[0].SetActive(false);
+        periodList[1].SetActive(false);
+        periodList[2].SetActive(false);
+
         phase1.SetActive(false);   
         phase2.SetActive(true);
         EScoreManager.Instance.IncrementScore(path,friendS,step);
+
+        if (numberOfLetterSend < 2)
+        {
+            periodList[0].SetActive(true);
+
+            foreach (var child in lancerList)
+            {
+                if(lancerList.IndexOf(child) == numberOfLetterSend) child.SetActive(true);
+                else child.SetActive(false);
+            }
+
+        }
+        else if (numberOfLetterSend < 5)
+        {
+            periodList[1].SetActive(true);
+            
+            foreach (var child in lancerList)
+            {
+                if(lancerList.IndexOf(child) == numberOfLetterSend) child.SetActive(true);
+                else child.SetActive(false);
+            }
+        }
+        else
+        {
+            periodList[2].SetActive(true);
+            
+            foreach (var child in lancerList)
+            {
+                if(lancerList.IndexOf(child) == numberOfLetterSend) child.SetActive(true);
+                else child.SetActive(false);
+            }
+        }
+
+        numberOfLetterSend++;
     }
 
     public void AvoidLastChoice()
