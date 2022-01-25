@@ -592,41 +592,53 @@ MonoBehaviour:
   basicStruct:
   - phrase: "Wesh, quoi de pr\xE9vu meuf ?"
     scoreFriend: 0
-    path: 1
+    path: 3
+    step: 1
   - phrase: Tu aimes le chocolat ?
     scoreFriend: -1
-    path: 2
+    path: 3
+    step: 2
   - phrase: "Wesh, comment c'est pass\xE9 ton week end ?"
     scoreFriend: 2
     path: 3
+    step: 1
   - phrase: Trop cool le zoo !!! C'est toi le monkey ?
     scoreFriend: 0
     path: 4
+    step: 0
   - phrase: "L'ann\xE9e pro c'est le coll\xE8ge ! J'esp\xE8re qu'on sera dans la
       m\xEAme classe wink wink :)"
     scoreFriend: 2
     path: 5
+    step: 0
   - phrase: J'aime les dattes
     scoreFriend: 0
     path: 0
+    step: 0
   - phrase: "J'aime les cl\xE9mentines"
     scoreFriend: 1
     path: 0
+    step: 0
   - phrase: J'aime les raisins
     scoreFriend: -1
     path: 0
+    step: 0
   - phrase: J'aime les oranges
     scoreFriend: 0
     path: 0
+    step: 0
   - phrase: J'aime les citrons
     scoreFriend: 1
     path: 0
+    step: 0
   - phrase: J'aime les citrons verts
     scoreFriend: -1
     path: 0
+    step: 0
   - phrase: J'aime les avocats
     scoreFriend: 0
     path: 0
+    step: 0
   refItem: {fileID: 783377523}
 --- !u!4 &96539568
 Transform:

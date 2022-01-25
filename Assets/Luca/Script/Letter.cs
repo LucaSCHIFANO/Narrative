@@ -19,7 +19,7 @@ public class Letter : MonoBehaviour
     public GameObject phase1;
     public GameObject phase2;
 
-    private int friendS = 0, loveS = 0;
+    private int friendS = 0, path = 0, step = 0;
 
     public string theName;
     
@@ -40,7 +40,8 @@ public class Letter : MonoBehaviour
             object0.text.text = go.text.text;
             theName = _name;
             friendS = go.friendS;
-            loveS = go.loveS;
+            path = go.path;
+            step = go.step;
         }
         else
         {
@@ -60,7 +61,7 @@ public class Letter : MonoBehaviour
     {
         phase1.SetActive(false);   
         phase2.SetActive(true);
-        EScoreManager.Instance.IncrementScore(loveS,friendS);
+        EScoreManager.Instance.IncrementScore(path,friendS,step);
     }
 
     public void AvoidLastChoice()

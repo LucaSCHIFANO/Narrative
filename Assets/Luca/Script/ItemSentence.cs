@@ -22,7 +22,8 @@ public class ItemSentence : MonoBehaviour
 
     //Scoring
     public int friendS;
-    public int loveS;
+    public int path;
+    public int step;
 
     private void Start()
     {
@@ -66,10 +67,11 @@ public class ItemSentence : MonoBehaviour
 
     }
     
-    public void SetScore(int loveS = 0, int friendS = 0)
+    public void SetScore(int pathId = 0, int friendS = 0, int stepId = 0)
     {
-        this.loveS = loveS;
+        this.path = pathId;
         this.friendS = friendS;
+        this.step = stepId;
     }
 
 }

@@ -40,11 +40,11 @@ public class S_ListTexts : MonoBehaviour
 
     }
 
-    public void AddNewSentence(string txt, int pathId, int friend)
+    public void AddNewSentence(string txt, int pathId, int friend, int stepId)
     {
         BasicSentences();
 
-        actuallyStruct.Add(new S_ScriptTestStruct(txt, pathId, friend));
+        actuallyStruct.Add(new S_ScriptTestStruct(txt, pathId, friend, stepId));
     }
 
     //public void RemoveSentence()
@@ -58,36 +58,62 @@ public class S_ListTexts : MonoBehaviour
         if(waitSentences == false)
         {
             int value = PlayerPrefs.GetInt("pathValue");
-            switch (value)
+            int valueStep  = PlayerPrefs.GetInt("stepValue");
+
+            Debug.Log(valueStep + " " + value);
+
+            if (PlayerPrefs.HasKey("pathValue"))
             {
-                case 0:
-                    for (int i = 0; i < 3; i++)
-                    {
-                        //listePhrases.Add(listeBasicPhrases[i]);
-
-                        actuallyStruct.Add(basicStruct[i]);
-
-                    }
-                    break;
-                case 1:
-                        actuallyStruct.Add(basicStruct[3]);
-                    break;
-                case 2:
-                    for (int i = 3; i < 5; i++)
-                    {
-
-                        actuallyStruct.Add(basicStruct[i]);
-
-                    }
-                    break;
-                case 3:
-                    actuallyStruct.Add(basicStruct[3]);
-                    break;
-
-
-
+                for (int i = value; i < value + valueStep; i++)
+                {
+                    print(i);
+                    actuallyStruct.Add(basicStruct[i]);
+                }
 
             }
+            else
+            {
+                for (int i = 0; i < 3; i++)
+                {
+
+                    actuallyStruct.Add(basicStruct[i]);
+
+                }
+            }
+
+
+
+
+            //switch (value)
+            //{
+            //    case 0:
+            //        for (int i = 0; i < 3; i++)
+            //        {
+            //            //listePhrases.Add(listeBasicPhrases[i]);
+
+            //            actuallyStruct.Add(basicStruct[i]);
+
+            //        }
+            //        break;
+            //    case 1:
+            //            actuallyStruct.Add(basicStruct[3]);
+            //        break;
+            //    case 2:
+            //        for (int i = 3; i < 5; i++)
+            //        {
+
+            //            actuallyStruct.Add(basicStruct[i]);
+
+            //        }
+            //        break;
+            //    case 3:
+            //        actuallyStruct.Add(basicStruct[3]);
+            //        break;
+
+
+
+
+            //}
         }
 
         waitSentences = true;
@@ -103,7 +129,7 @@ public class S_ListTexts : MonoBehaviour
             refParent.transform.SetParent(emptyTextTransf);
             refParent.transform.GetChild(1).GetComponent<Text>().text = actuallyStruct[i].phrase; //test
 
-            refParent.GetComponent<ItemSentence>().SetScore(actuallyStruct[i].path, actuallyStruct[i].scoreFriend);
+            refParent.GetComponent<ItemSentence>().SetScore(actuallyStruct[i].path, actuallyStruct[i].scoreFriend, actuallyStruct[i].step);
 
             refParent.transform.localScale = new Vector3(1, 1, 1); // :) wtf
             refParent.name = "Item (" + i + ")";

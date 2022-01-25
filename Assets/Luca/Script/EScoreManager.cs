@@ -11,7 +11,7 @@ public class EScoreManager : MonoBehaviour
 
     private int friendshipS;
     private int pathS;
-
+    private int step;
     public void Awake()
     {
         _instance = this;
@@ -29,14 +29,16 @@ public class EScoreManager : MonoBehaviour
         
     }
 
-    public void IncrementScore(int pathId, int friend)
+    public void IncrementScore(int pathId, int friend, int stepId)
     {
         friendshipS += friend;
-        pathS = pathId; 
+        pathS = pathId;
+        step = stepId;
         Debug.Log("le score amitié : " + friendshipS + " le path est : " + pathS);
 
         PlayerPrefs.SetInt("friendValue", friendshipS);
         PlayerPrefs.SetInt("pathValue", pathS);
+        PlayerPrefs.SetInt("stepValue", step);
         PlayerPrefs.Save();
     }
 
