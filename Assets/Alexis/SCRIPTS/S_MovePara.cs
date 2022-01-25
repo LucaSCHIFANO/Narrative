@@ -30,7 +30,7 @@ public class S_MovePara : MonoBehaviour
         switch (value) //Flèche de droite + enum = mets tout direct
         {
             case FondValue.FOREGROUND:
-                speed = 0.05f;
+                speed = 0.010f;
                 break;
             case FondValue.MIDGROUND:
                 speed = 0.005f;
