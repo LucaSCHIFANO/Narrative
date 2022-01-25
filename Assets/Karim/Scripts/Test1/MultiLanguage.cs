@@ -10,14 +10,29 @@ public class MultiLanguage : MonoBehaviour
     private void Awake()
     {
         LocalizationManager.Read();
-        LocalizationManager.Language = "French";
-        switch (Application.systemLanguage)
+        if (PlayerPrefs.GetString("language") == null)
         {
-            case SystemLanguage.English :
+            LocalizationManager.Language = "English";
+            Debug.Log("null");
+        }
+        else
+        {
+            LocalizationManager.Language = PlayerPrefs.GetString("language");
+            Debug.Log(LocalizationManager.Language);
+        }
+
+       
+        switch (LocalizationManager.Language)
+        {
+            case "English" :
                 LocalizationManager.Language = "English";
+                PlayerPrefs.SetString("language", "English");
+                PlayerPrefs.Save();
                 break;
-            case SystemLanguage.French:
+            case "French":
                 LocalizationManager.Language = "French";
+                PlayerPrefs.SetString("language", "French");
+                PlayerPrefs.Save();
                 break;
 
         }
@@ -25,5 +40,7 @@ public class MultiLanguage : MonoBehaviour
    public void Language(string language)
     {
         LocalizationManager.Language = language;
+        PlayerPrefs.SetString("language", language);
+        
     }
 }
