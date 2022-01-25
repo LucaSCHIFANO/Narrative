@@ -4812,7 +4812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5057164474325253889, guid: 755ece6d881507c47b0f191e5f45138f, type: 3}
       propertyPath: value
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755ece6d881507c47b0f191e5f45138f, type: 3}
@@ -8921,7 +8921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1307541282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11039,6 +11039,10 @@ MonoBehaviour:
   refList: {fileID: 0}
   phase1: {fileID: 959775885}
   phase2: {fileID: 1307541281}
+  periodList:
+  - {fileID: 640100429}
+  - {fileID: 315219084}
+  - {fileID: 970124849}
   theName: 
 --- !u!1 &1680705242
 GameObject:
@@ -11205,7 +11209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1702691739
 RectTransform:
   m_ObjectHideFlags: 0
