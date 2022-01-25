@@ -10,7 +10,7 @@ public class EScoreManager : MonoBehaviour
     public static EScoreManager Instance { get => _instance; }
 
     private int friendshipS;
-    private int loveshipS;
+    private int pathS;
 
     public void Awake()
     {
@@ -29,14 +29,14 @@ public class EScoreManager : MonoBehaviour
         
     }
 
-    public void IncrementScore(int loveS, int friend)
+    public void IncrementScore(int pathId, int friend)
     {
         friendshipS += friend;
-        loveshipS += loveS; 
-        Debug.Log("le score amitié : " + friendshipS + " le score amour : " + loveshipS);
+        pathS = pathId; 
+        Debug.Log("le score amitié : " + friendshipS + " le path est : " + pathS);
 
         PlayerPrefs.SetInt("friendValue", friendshipS);
-        PlayerPrefs.SetInt("loveValue", loveshipS);
+        PlayerPrefs.SetInt("pathValue", pathS);
         PlayerPrefs.Save();
     }
 

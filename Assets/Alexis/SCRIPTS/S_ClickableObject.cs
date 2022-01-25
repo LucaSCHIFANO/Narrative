@@ -15,7 +15,7 @@ public class S_ClickableObject : MonoBehaviour
     [SerializeField] private Button refButton;
 
     [SerializeField] private int friendS;
-    [SerializeField] private int loveS;
+    [SerializeField] private int pathS;
 
     private S_ListTexts callFunction;
 
@@ -43,7 +43,7 @@ public class S_ClickableObject : MonoBehaviour
 
         //Save and send it
         SaveValues();
-        callFunction.AddNewSentence(textBase, loveS, friendS);
+        callFunction.AddNewSentence(textBase, pathS, friendS);
 
 
         //Destroy(this.gameObject);
