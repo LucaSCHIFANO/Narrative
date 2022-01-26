@@ -2152,8 +2152,8 @@ MonoBehaviour:
   receivePhase: {fileID: 420634187}
   mail: {fileID: 343995879}
   listLetter:
-  - {fileID: 2042205697}
   - {fileID: 2123552969}
+  - {fileID: 1766271086}
   - {fileID: 1766271086}
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}
@@ -7883,8 +7883,8 @@ MonoBehaviour:
   receivePhase: {fileID: 420634187}
   mail: {fileID: 343995879}
   listLetter:
-  - {fileID: 2042205697}
-  - {fileID: 2123552969}
+  - {fileID: 1766271086}
+  - {fileID: 1766271086}
   - {fileID: 1766271086}
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}

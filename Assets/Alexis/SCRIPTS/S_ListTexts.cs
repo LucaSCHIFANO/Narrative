@@ -33,6 +33,7 @@ public class S_ListTexts : MonoBehaviour
     private int histoire;
     private bool waitSentences;
     private int special = 0;
+    private int valueStep = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -67,9 +68,9 @@ public class S_ListTexts : MonoBehaviour
         if(waitSentences == false)
         {
             int value = PlayerPrefs.GetInt("pathValue");
-            int valueStep  = PlayerPrefs.GetInt("stepValue");
+            valueStep  = PlayerPrefs.GetInt("stepValue");
 
-            AddSpecial(valueStep);
+            AddSpecial();
 
             Debug.Log(valueStep + " " + value);
 
@@ -91,9 +92,9 @@ public class S_ListTexts : MonoBehaviour
 
                 }
             }
+            
+            special = 0;
         }
-
-        special = 0;
         waitSentences = true;
     }
 
@@ -132,10 +133,10 @@ public class S_ListTexts : MonoBehaviour
 
     }
 
-    public void AddSpecial(int add)
+    public void AddSpecial()
     {
         special = 1;
-        add += special;
+        valueStep += special;
     }
 
 }

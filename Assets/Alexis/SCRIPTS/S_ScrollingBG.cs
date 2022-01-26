@@ -74,6 +74,8 @@ public class S_ScrollingBG : MonoBehaviour
     public void showLetter()
     {
         doOnce += 1;
+        
+        Debug.Log(doOnce);
 
 
         if (doOnce == 1)
