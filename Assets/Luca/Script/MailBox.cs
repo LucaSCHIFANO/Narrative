@@ -19,7 +19,7 @@ public class MailBox : MonoBehaviour
     [SerializeField] private GameObject notif;
 
 
-    public S_ScrollingBG scroll;
+    [HideInInspector] public S_ScrollingBG scroll;
     
 
     private bool once;
@@ -65,5 +65,14 @@ public class MailBox : MonoBehaviour
         lettre.SetActive(true);
         scroll.showLetter();
         
+    }
+
+    public void resetAllData()
+    {
+        once = false;
+        image.sprite = close;
+        enveloppe.transform.localScale = Vector3.one;
+        enveloppe.GetComponent<Image>().color = new Color(1, 1, 1, 0);
+        notif.SetActive(true);
     }
 }

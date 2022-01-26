@@ -56,18 +56,24 @@ public class S_ScrollingBG : MonoBehaviour
         phase3.SetActive(true);
         receivePhase.SetActive(true);
         mail.scroll = this;
-        
         backToOrigin();
+        resetAllDataMail();
+    }
+
+
+    void resetAllDataMail()
+    {
+        listLetter[0].SetActive(false);
+        listLetter[1].SetActive(false);
+        listLetter[2].SetActive(false);
+        
+        mail.resetAllData();
     }
 
 
     public void showLetter()
     {
         doOnce += 1;
-
-        listLetter[0].SetActive(false);
-        listLetter[1].SetActive(false);
-        listLetter[2].SetActive(false);
 
 
         if (doOnce == 1)
