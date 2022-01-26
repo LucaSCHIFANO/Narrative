@@ -26,5 +26,10 @@ namespace Assets.SimpleLocalization
         {
             GetComponent<Text>().text = LocalizationManager.Localize(LocalizationKey);
         }
+
+        public void Localize2(string txtId)
+        {
+            GetComponent<Text>().text = LocalizationManager.Localize(txtId);
+        }
     }
 }

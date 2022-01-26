@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
+
+
 public class S_ListTexts : MonoBehaviour
 {
 
@@ -96,7 +98,10 @@ public class S_ListTexts : MonoBehaviour
 
             GameObject refParent = Instantiate(refText, emptyTextTransf.position, Quaternion.identity);
             refParent.transform.SetParent(emptyTextTransf);
-            refParent.transform.GetChild(1).GetComponent<Text>().text = actuallyStruct[i].phrase; //test
+            refParent.transform.GetChild(1).GetComponent<Assets.SimpleLocalization.LocalizedText>().Localize2(actuallyStruct[i].phrase);
+            
+            // = actuallyStruct[i].phrase; //LocalisationManager.Localize(actuallyStruct[i]
+            
 
             refParent.GetComponent<ItemSentence>().SetScore(actuallyStruct[i].path, actuallyStruct[i].scoreFriend, actuallyStruct[i].step);
 
