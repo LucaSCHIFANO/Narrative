@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 19648348}
   - component: {fileID: 19648350}
   - component: {fileID: 19648349}
+  - component: {fileID: 19648351}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -372,6 +373,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19648347}
   m_CullTransparentMesh: 1
+--- !u!114 &19648351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19648347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 
 --- !u!1 &21876367
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,11 +694,11 @@ MonoBehaviour:
     step: 0
   answers:
   - Id_Quit
-  - J'aime les poires
-  - J'aime les framboises
-  - J'aime les framboises
-  - J'aime les framboises
-  - J'aime les framboises
+  - Id_Quit
+  - Id_Quit
+  - Id_Quit
+  - Id_Quit
+  - Id_Quit
   - J'aime les framboises
   - J'aime les framboises
   - J'aime les framboises
