@@ -32,11 +32,12 @@ public class S_ListTexts : MonoBehaviour
     private string removeSent;
     private int histoire;
     private bool waitSentences;
+    private int special = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
 
         //First sentences
         BasicSentences();
@@ -65,6 +66,8 @@ public class S_ListTexts : MonoBehaviour
             int value = PlayerPrefs.GetInt("pathValue");
             int valueStep  = PlayerPrefs.GetInt("stepValue");
 
+            AddSpecial(valueStep);
+
             Debug.Log(valueStep + " " + value);
 
             if (PlayerPrefs.HasKey("pathValue"))
@@ -87,6 +90,7 @@ public class S_ListTexts : MonoBehaviour
             }
         }
 
+        special = 0;
         waitSentences = true;
     }
 
@@ -123,6 +127,12 @@ public class S_ListTexts : MonoBehaviour
         
         ScrollSize.Instance.destroyList();
 
+    }
+
+    public void AddSpecial(int add)
+    {
+        special = 1;
+        add += special;
     }
 
 }

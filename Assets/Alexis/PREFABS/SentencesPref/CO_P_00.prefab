@@ -259,12 +259,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4b83149c26884f887078ad6e6e9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBase: Enfin les vacances !! Es-tu contente ?
+  textBase: Id_L3_C
   imDone: 0
   canInteract: {fileID: 2448980622395170691}
   refButton: {fileID: 2448980622938474293}
-  friendS: 1
-  pathS: 6
+  friendS: -2
+  pathS: 0
   step: 0
 --- !u!114 &5057164474325253889
 MonoBehaviour:
