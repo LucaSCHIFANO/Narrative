@@ -5,18 +5,23 @@ using Assets.SimpleLocalization;
 using UnityEngine.UI;
 public class MultiLanguage : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
+    public Sprite newSprite;
 
-
+    
     private void Awake()
     {
+        
         LocalizationManager.Read();
         if (PlayerPrefs.GetString("language") == null)
         {
+            
             LocalizationManager.Language = "English";
             Debug.Log("null");
         }
         else
         {
+            
             LocalizationManager.Language = PlayerPrefs.GetString("language");
             Debug.Log(LocalizationManager.Language);
         }
@@ -33,11 +38,16 @@ public class MultiLanguage : MonoBehaviour
                 LocalizationManager.Language = "French";
                 PlayerPrefs.SetString("language", "French");
                 PlayerPrefs.Save();
+                ChangeSprite(newSprite);
                 break;
 
         }
     }
-   public void Language(string language)
+   private void ChangeSprite(Sprite newSprite)
+    {
+        spriteRenderer.sprite = newSprite;
+    }
+    public void Language(string language)
     {
         LocalizationManager.Language = language;
         PlayerPrefs.SetString("language", language);
