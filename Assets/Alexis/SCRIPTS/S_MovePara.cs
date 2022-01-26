@@ -26,7 +26,6 @@ public class S_MovePara : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("sdsdfsfsqfqsfqssfqdseqfd");
         switch (value) //Flèche de droite + enum = mets tout direct
         {
             case FondValue.FOREGROUND:

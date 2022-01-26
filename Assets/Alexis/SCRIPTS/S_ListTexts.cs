@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
+
+
 public class S_ListTexts : MonoBehaviour
 {
 
@@ -18,6 +20,9 @@ public class S_ListTexts : MonoBehaviour
 
     [SerializeField] private List<S_ScriptTestStruct> actuallyStruct;
     [SerializeField] private List<S_ScriptTestStruct> basicStruct;
+
+    [TextArea]
+    public List<string> answers = new List<string>();
 
     //refs
     public ItemSentence refItem;
@@ -66,7 +71,7 @@ public class S_ListTexts : MonoBehaviour
             {
                 for (int i = value; i < value + valueStep; i++)
                 {
-                    print(i);
+
                     actuallyStruct.Add(basicStruct[i]);
                 }
 
@@ -80,40 +85,6 @@ public class S_ListTexts : MonoBehaviour
 
                 }
             }
-
-
-
-
-            //switch (value)
-            //{
-            //    case 0:
-            //        for (int i = 0; i < 3; i++)
-            //        {
-            //            //listePhrases.Add(listeBasicPhrases[i]);
-
-            //            actuallyStruct.Add(basicStruct[i]);
-
-            //        }
-            //        break;
-            //    case 1:
-            //            actuallyStruct.Add(basicStruct[3]);
-            //        break;
-            //    case 2:
-            //        for (int i = 3; i < 5; i++)
-            //        {
-
-            //            actuallyStruct.Add(basicStruct[i]);
-
-            //        }
-            //        break;
-            //    case 3:
-            //        actuallyStruct.Add(basicStruct[3]);
-            //        break;
-
-
-
-
-            //}
         }
 
         waitSentences = true;
@@ -127,7 +98,10 @@ public class S_ListTexts : MonoBehaviour
 
             GameObject refParent = Instantiate(refText, emptyTextTransf.position, Quaternion.identity);
             refParent.transform.SetParent(emptyTextTransf);
-            refParent.transform.GetChild(1).GetComponent<Text>().text = actuallyStruct[i].phrase; //test
+            refParent.transform.GetChild(1).GetComponent<Assets.SimpleLocalization.LocalizedText>().Localize2(actuallyStruct[i].phrase);
+            
+            // = actuallyStruct[i].phrase; //LocalisationManager.Localize(actuallyStruct[i]
+            
 
             refParent.GetComponent<ItemSentence>().SetScore(actuallyStruct[i].path, actuallyStruct[i].scoreFriend, actuallyStruct[i].step);
 
