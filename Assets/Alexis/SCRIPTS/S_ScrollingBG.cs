@@ -16,7 +16,10 @@ public class S_ScrollingBG : MonoBehaviour
 
     public GameObject phase2;
     public GameObject phase3;
-
+    [SerializeField] private GameObject receivePhase;
+    [SerializeField] private MailBox mail;
+    
+    
     [SerializeField] private List<GameObject> listLetter;
     private int doOnce = 0;
     [SerializeField] private GameObject refListAnswers;
@@ -48,12 +51,29 @@ public class S_ScrollingBG : MonoBehaviour
     IEnumerator Waitfond ()
     {
         yield return new WaitForSeconds(time);
+        
+        phase2.SetActive(false);
         phase3.SetActive(true);
-        doOnce += 1;
+        receivePhase.SetActive(true);
+        mail.scroll = this;
+        backToOrigin();
+        resetAllDataMail();
+    }
 
+
+    void resetAllDataMail()
+    {
         listLetter[0].SetActive(false);
         listLetter[1].SetActive(false);
         listLetter[2].SetActive(false);
+        
+        mail.resetAllData();
+    }
+
+
+    public void showLetter()
+    {
+        doOnce += 1;
 
 
         if (doOnce == 1)
@@ -78,16 +98,9 @@ public class S_ScrollingBG : MonoBehaviour
             listLetter[2].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>().Localize2(checkList.answers[value]);
 
         }
-
-
-
-
-        
-
-
-        phase2.SetActive(false);
-        backToOrigin();
     }
+    
+    
 
     public void backToOrigin()
     {
