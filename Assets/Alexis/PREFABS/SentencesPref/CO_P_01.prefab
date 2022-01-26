@@ -259,13 +259,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4b83149c26884f887078ad6e6e9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBase: T trop bone !
+  textBase: Id_L5_C
   imDone: 0
   canInteract: {fileID: 2448980622395170691}
   refButton: {fileID: 2448980622938474293}
-  friendS: 1
-  pathS: 7
-  step: 0
+  friendS: -1
+  pathS: 14
+  step: 3
 --- !u!114 &2560468978410479447
 MonoBehaviour:
   m_ObjectHideFlags: 0

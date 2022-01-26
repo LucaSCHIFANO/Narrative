@@ -678,27 +678,75 @@ MonoBehaviour:
     step: 2
   - phrase: Id_L4_A
     scoreFriend: 0
-    path: 0
-    step: 0
+    path: 11
+    step: 2
   - phrase: Id_L4_B
     scoreFriend: 0
-    path: 0
-    step: 0
+    path: 11
+    step: 2
   - phrase: Id_L4_C
     scoreFriend: 2
-    path: 0
-    step: 0
+    path: 11
+    step: 3
   - phrase: Id_L5_A
     scoreFriend: 1
-    path: 0
-    step: 0
+    path: 14
+    step: 3
   - phrase: Id_L5_B
     scoreFriend: 0
-    path: 0
-    step: 0
+    path: 14
+    step: 3
   - phrase: Id_L5_D
     scoreFriend: 1
-    path: 0
+    path: 14
+    step: 3
+  - phrase: Id_L6_A
+    scoreFriend: 2
+    path: 17
+    step: 2
+  - phrase: Id_L6_B
+    scoreFriend: 1
+    path: 17
+    step: 2
+  - phrase: Id_L6_C
+    scoreFriend: -3
+    path: 17
+    step: 2
+  - phrase: Id_L7_A
+    scoreFriend: -3
+    path: 19
+    step: 2
+  - phrase: Id_L7_B
+    scoreFriend: -3
+    path: 19
+    step: 2
+  - phrase: Id_L8_B
+    scoreFriend: 1
+    path: 19
+    step: 0
+  - phrase: Id_L8_A
+    scoreFriend: 2
+    path: 19
+    step: 0
+  - phrase: Id_L8_C
+    scoreFriend: 2
+    path: 19
+    step: 0
+  - phrase: Id_L8_D
+    scoreFriend: 1
+    path: 19
+    step: 0
+  - phrase: Id_L9_A
+    scoreFriend: 0
+    path: 19
+    step: 0
+  - phrase: Id_L9_D
+    scoreFriend: 0
+    path: 19
+    step: 0
+  - phrase: Id_L9_E
+    scoreFriend: 0
+    path: 19
     step: 0
   answers:
   - Id_Quit
@@ -7391,7 +7439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &959775886
 MonoBehaviour:
   m_ObjectHideFlags: 0
