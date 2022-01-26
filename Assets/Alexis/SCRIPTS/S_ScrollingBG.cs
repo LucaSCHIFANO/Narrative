@@ -73,7 +73,9 @@ public class S_ScrollingBG : MonoBehaviour
             int value = PlayerPrefs.GetInt("pathValue");
             Debug.Log(value + " blablabblabalablablalb");
 
-            listLetter[2].transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = checkList.answers[value];
+            //listLetter[2].transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = checkList.answers[value];
+
+            listLetter[2].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>().Localize2(checkList.answers[value]);
 
         }
 

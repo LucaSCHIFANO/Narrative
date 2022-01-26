@@ -642,12 +642,11 @@ MonoBehaviour:
     scoreFriend: 2
     path: 3
     step: 1
-  - phrase: Trop cool le zoo !!! C'est toi le monkey ?
+  - phrase: Id_Play
     scoreFriend: 0
     path: 4
     step: 0
-  - phrase: "L'ann\xE9e pro c'est le coll\xE8ge ! J'esp\xE8re qu'on sera dans la
-      m\xEAme classe wink wink :)"
+  - phrase: Id_Play
     scoreFriend: 2
     path: 5
     step: 0
@@ -680,7 +679,7 @@ MonoBehaviour:
     path: 0
     step: 0
   answers:
-  - J'aime les bananes
+  - Id_Quit
   - J'aime les poires
   - J'aime les framboises
   - J'aime les framboises
@@ -5696,6 +5695,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6bac4142053ad2c4091d484b85deffa0, type: 3}
+    - target: {fileID: 3948193149197984380, guid: 1afefb427d30e7242bf63cd0f048b441, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1748787168}
     - target: {fileID: 6625055542574884201, guid: 1afefb427d30e7242bf63cd0f048b441, type: 3}
       propertyPath: m_Text
       value: 
@@ -12141,7 +12144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   object0: {fileID: 783377523}
   confirmButton: {fileID: 1379484147}
-  refList: {fileID: 0}
+  refList: {fileID: 96539567}
   phase1: {fileID: 959775885}
   phase2: {fileID: 1307541281}
   periodList:
@@ -12772,6 +12775,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743169988}
   m_CullTransparentMesh: 1
+--- !u!114 &1748787168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7358677165953170919, guid: 1afefb427d30e7242bf63cd0f048b441, type: 3}
+  m_PrefabInstance: {fileID: 783377519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1749517819
 GameObject:
   m_ObjectHideFlags: 0

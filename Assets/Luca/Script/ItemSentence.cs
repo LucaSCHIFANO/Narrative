@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ItemSentence : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class ItemSentence : MonoBehaviour
     
     //GetCompo
     public Image image;
-    public Text text;
+    public TextMeshProUGUI text;
 
     //Scoring
     public int friendS;
