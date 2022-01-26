@@ -34,6 +34,8 @@ public class S_ListTexts : MonoBehaviour
     private bool waitSentences;
     private int special = 0;
     private int valueStep = 0;
+    private bool doOnce = false;
+    private bool activeIt = false;
 
     // Start is called before the first frame update
     void Start()
@@ -94,6 +96,8 @@ public class S_ListTexts : MonoBehaviour
             }
             
             special = 0;
+            doOnce = false;
+            activeIt = false;
         }
         waitSentences = true;
     }
@@ -135,8 +139,20 @@ public class S_ListTexts : MonoBehaviour
 
     public void AddSpecial()
     {
-        special = 1;
-        valueStep += special;
+        if(doOnce == false)
+        {
+            if (activeIt == true)
+            {
+                special = 1;
+                valueStep += special;
+                doOnce = true;
+                Debug.Log("CACA");
+            }
+            activeIt = true;
+            Debug.Log("Active");
+        }
+
+
     }
 
 }

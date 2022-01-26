@@ -18,15 +18,15 @@ public class S_CheckScore_END : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(value > 10)
-        {
-            fin1.SetActive(true);
-        }
-        else if (value > 4 && value <= 7)
+        if(value > 50)
         {
             fin2.SetActive(true);
         }
-        else if (value > 7 && value <= 10)
+        else if (value > 10)
+        {
+            fin1.SetActive(true);
+        }
+        else if (value > 4  && value <= 10)
         {
             fin3.SetActive(true);
         }

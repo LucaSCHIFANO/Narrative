@@ -722,32 +722,28 @@ MonoBehaviour:
     step: 2
   - phrase: Id_L8_B
     scoreFriend: 1
-    path: 19
-    step: 0
+    path: 23
+    step: 1
   - phrase: Id_L8_A
     scoreFriend: 2
-    path: 19
-    step: 0
+    path: 23
+    step: 1
   - phrase: Id_L8_C
     scoreFriend: 2
-    path: 19
-    step: 0
+    path: 23
+    step: 2
   - phrase: Id_L8_D
     scoreFriend: 1
-    path: 19
-    step: 0
+    path: 23
+    step: 2
   - phrase: Id_L9_A
     scoreFriend: 0
-    path: 19
-    step: 0
-  - phrase: Id_L9_D
-    scoreFriend: 0
-    path: 19
-    step: 0
+    path: 23
+    step: 2
   - phrase: Id_L9_E
     scoreFriend: 0
-    path: 19
-    step: 0
+    path: 23
+    step: 2
   answers:
   - Id_Quit
   - Id_Quit
@@ -2337,6 +2333,8 @@ MonoBehaviour:
   time: 0
   phase2: {fileID: 0}
   phase3: {fileID: 0}
+  receivePhase: {fileID: 0}
+  mail: {fileID: 0}
   listLetter:
   - {fileID: 652251774}
   - {fileID: 1925194}
@@ -4478,6 +4476,8 @@ MonoBehaviour:
   time: 0
   phase2: {fileID: 1307541281}
   phase3: {fileID: 1239483922}
+  receivePhase: {fileID: 0}
+  mail: {fileID: 0}
   listLetter:
   - {fileID: 652251774}
   - {fileID: 1925194}
@@ -7582,6 +7582,8 @@ MonoBehaviour:
   time: 0
   phase2: {fileID: 0}
   phase3: {fileID: 0}
+  receivePhase: {fileID: 0}
+  mail: {fileID: 0}
   listLetter:
   - {fileID: 652251774}
   - {fileID: 1925194}
@@ -11326,7 +11328,7 @@ MonoBehaviour:
       - m_Target: {fileID: 96539567}
         m_TargetAssemblyTypeName: S_ListTexts, Assembly-CSharp
         m_MethodName: AddSpecial
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14355,7 +14357,7 @@ MonoBehaviour:
       - m_Target: {fileID: 96539567}
         m_TargetAssemblyTypeName: S_ListTexts, Assembly-CSharp
         m_MethodName: AddSpecial
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
