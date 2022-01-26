@@ -15,6 +15,9 @@ public class MailBox : MonoBehaviour
 
 
     [SerializeField] private GameObject enveloppe;
+    [SerializeField] private Button envBox;
+    private int float1;
+    
     [SerializeField] private GameObject lettre;
     [SerializeField] private GameObject notif;
 
@@ -23,6 +26,7 @@ public class MailBox : MonoBehaviour
     
 
     private bool once;
+    private bool once2;
 
     private Image image;
     
@@ -38,13 +42,13 @@ public class MailBox : MonoBehaviour
             once = true;
             image.sprite = open;
             notif.SetActive(false);
-            StartCoroutine(spawnLetter());
+            spawnLetter();
         }
     }
 
-    IEnumerator spawnLetter()
+    void spawnLetter()
     {
-        var float1 = Random.Range(0, 3);
+        float1 = Random.Range(0, 3);
 
         while (float1 == 1)
         {
@@ -57,19 +61,30 @@ public class MailBox : MonoBehaviour
         
         enveloppe.transform.DOScale(2, 2);
         imE.DOFade(1, 1.5f);
-        
-        yield return new WaitForSeconds(1.5f);
-        imE.sprite = listEnv[float1 + 1];
-        
-        yield return new WaitForSeconds(0.5f);
-        lettre.SetActive(true);
-        scroll.showLetter();
-        
+
     }
 
+    public void openletter()
+    {
+        if (!once2)
+        {
+            once2 = true;
+            StartCoroutine(open1());
+        }
+    }
+
+    IEnumerator open1()
+    {
+        enveloppe.GetComponent<Image>().sprite = listEnv[float1 + 1];
+        yield return new WaitForSeconds(0.75f);
+        lettre.SetActive(true);
+        scroll.showLetter();
+    }
+    
     public void resetAllData()
     {
         once = false;
+        once2 = false;
         image.sprite = close;
         enveloppe.transform.localScale = Vector3.one;
         enveloppe.GetComponent<Image>().color = new Color(1, 1, 1, 0);
