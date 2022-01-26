@@ -456,53 +456,109 @@ MonoBehaviour:
   emptyTextTransf: {fileID: 252023513}
   actuallyStruct: []
   basicStruct:
-  - phrase: Id_Play
+  - phrase: Id_L1_A
     scoreFriend: 0
-    path: 3
-    step: 1
-  - phrase: Id_Play
-    scoreFriend: -1
     path: 3
     step: 2
-  - phrase: Id_Play
-    scoreFriend: 2
+  - phrase: Id_L1_B
+    scoreFriend: 0
     path: 3
-    step: 1
-  - phrase: Id_Play
+    step: 2
+  - phrase: Id_L1_C
     scoreFriend: 0
-    path: 4
-    step: 0
-  - phrase: Id_Play
+    path: 3
+    step: 2
+  - phrase: Id_L2_A
+    scoreFriend: 0
+    path: 6
+    step: 2
+  - phrase: Id_L2_B
     scoreFriend: 2
-    path: 5
-    step: 0
-  - phrase: J'aime les dattes
+    path: 6
+    step: 2
+  - phrase: Id_L2_C
     scoreFriend: 0
-    path: 0
-    step: 0
-  - phrase: "J'aime les cl\xE9mentines"
+    path: 6
+    step: 2
+  - phrase: Id_L3_A
     scoreFriend: 1
-    path: 0
-    step: 0
-  - phrase: J'aime les raisins
-    scoreFriend: -1
-    path: 0
-    step: 0
-  - phrase: J'aime les oranges
+    path: 8
+    step: 2
+  - phrase: Id_L3_B
     scoreFriend: 0
-    path: 0
-    step: 0
-  - phrase: J'aime les citrons
+    path: 8
+    step: 2
+  - phrase: Id_L4_A
+    scoreFriend: 0
+    path: 11
+    step: 2
+  - phrase: Id_L4_B
+    scoreFriend: 0
+    path: 11
+    step: 2
+  - phrase: Id_L4_C
+    scoreFriend: 2
+    path: 11
+    step: 3
+  - phrase: Id_L5_A
     scoreFriend: 1
-    path: 0
-    step: 0
-  - phrase: J'aime les citrons verts
-    scoreFriend: -1
-    path: 0
-    step: 0
-  - phrase: J'aime les avocats
+    path: 14
+    step: 3
+  - phrase: Id_L5_B
     scoreFriend: 0
-    path: 0
+    path: 14
+    step: 3
+  - phrase: Id_L5_D
+    scoreFriend: 1
+    path: 14
+    step: 3
+  - phrase: Id_L6_A
+    scoreFriend: 2
+    path: 17
+    step: 2
+  - phrase: Id_L6_B
+    scoreFriend: 1
+    path: 17
+    step: 2
+  - phrase: Id_L6_C
+    scoreFriend: -3
+    path: 17
+    step: 2
+  - phrase: Id_L7_A
+    scoreFriend: -3
+    path: 19
+    step: 2
+  - phrase: Id_L7_B
+    scoreFriend: -3
+    path: 19
+    step: 2
+  - phrase: Id_L8_B
+    scoreFriend: 1
+    path: 19
+    step: 0
+  - phrase: Id_L8_A
+    scoreFriend: 2
+    path: 19
+    step: 0
+  - phrase: Id_L8_C
+    scoreFriend: 2
+    path: 19
+    step: 0
+  - phrase: Id_L8_D
+    scoreFriend: 1
+    path: 19
+    step: 0
+  - phrase: Id_L9_A
+    scoreFriend: 0
+    path: 19
+    step: 0
+  - phrase: Id_L9_D
+    scoreFriend: 0
+    path: 19
+    step: 0
+  - phrase: Id_L9_E
+    scoreFriend: 0
+    path: 19
     step: 0
   answers:
   - Id_Quit
@@ -893,7 +949,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 96539567}
         m_TargetAssemblyTypeName: S_ListTexts, Assembly-CSharp
         m_MethodName: AddSpecial
         m_Mode: 3
@@ -15761,7 +15817,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 96539567}
         m_TargetAssemblyTypeName: S_ListTexts, Assembly-CSharp
         m_MethodName: AddSpecial
         m_Mode: 3

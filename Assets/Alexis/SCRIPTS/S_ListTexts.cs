@@ -37,7 +37,10 @@ public class S_ListTexts : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("pathValue");
+        PlayerPrefs.DeleteKey("stepValue");
+        PlayerPrefs.DeleteKey("severalValue");
+        PlayerPrefs.DeleteKey("friendValue");
 
         //First sentences
         BasicSentences();
