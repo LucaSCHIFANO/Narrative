@@ -24,5 +24,6 @@ public class MailBox : MonoBehaviour
     private void OnMouseDown()
     {
         image.sprite = open;
+        Debug.Log("uhfeoirhruhvouvrhprvp");
     }
 }
