@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using DG.Tweening;
 
 public class S_ScrollingBG : MonoBehaviour
@@ -10,17 +12,22 @@ public class S_ScrollingBG : MonoBehaviour
     [SerializeField] private Transform pointBase;
     [SerializeField] private float speed;
     [SerializeField] private float time;
-    
+
+
     public GameObject phase2;
     public GameObject phase3;
 
+    [SerializeField] private List<GameObject> listLetter;
+    private int doOnce = 0;
+    [SerializeField] private GameObject refListAnswers;
+
+    [SerializeField] private S_ListTexts checkList;
     public Avion avion;
 
     // Start is called before the first frame update
     void Start()
     {
-
-
+       
     }
 
     public void OnEnable()
@@ -42,6 +49,42 @@ public class S_ScrollingBG : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         phase3.SetActive(true);
+        doOnce += 1;
+
+        listLetter[0].SetActive(false);
+        listLetter[1].SetActive(false);
+        listLetter[2].SetActive(false);
+
+
+        if (doOnce == 1)
+        {
+            listLetter[0].SetActive(true);
+        }
+        else if(doOnce == 3)
+        {
+            listLetter[1].SetActive(true);
+        }
+        else
+        {
+            listLetter[2].SetActive(true);
+
+
+
+            int value = PlayerPrefs.GetInt("pathValue");
+            Debug.Log(value + " blablabblabalablablalb");
+
+            //listLetter[2].transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = checkList.answers[value];
+
+            listLetter[2].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>().Localize2(checkList.answers[value]);
+
+        }
+
+
+
+
+        
+
+
         phase2.SetActive(false);
         backToOrigin();
     }

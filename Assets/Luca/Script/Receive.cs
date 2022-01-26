@@ -6,6 +6,7 @@ public class Receive : MonoBehaviour
 {
     public GameObject phase1;
 
+
     [SerializeField] private S_ListTexts refList;
     [SerializeField] private Letter refLetter;
 
