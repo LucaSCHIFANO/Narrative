@@ -25,7 +25,7 @@ public class Letter : MonoBehaviour
     private int friendS = 0, path = 0, step = 0;
 
     public string theName;
-    private int numberOfLetterSend;
+    public int numberOfLetterSend;
     
     public void Awake()
     {
@@ -104,6 +104,8 @@ public class Letter : MonoBehaviour
         }
 
         numberOfLetterSend++;
+        Debug.Log(numberOfLetterSend);
+
     }
 
     public void AvoidLastChoice()

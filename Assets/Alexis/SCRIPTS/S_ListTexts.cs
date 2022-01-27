@@ -150,6 +150,8 @@ public class S_ListTexts : MonoBehaviour
             }
             activeIt = true;
             Debug.Log("Active");
+
+
         }
 
 
