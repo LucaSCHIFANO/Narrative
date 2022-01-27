@@ -5,8 +5,7 @@ using Assets.SimpleLocalization;
 using UnityEngine.UI;
 public class MultiLanguage : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
+  
 
     
     private void Awake()
@@ -38,15 +37,11 @@ public class MultiLanguage : MonoBehaviour
                 LocalizationManager.Language = "French";
                 PlayerPrefs.SetString("language", "French");
                 PlayerPrefs.Save();
-                ChangeSprite(newSprite);
                 break;
 
         }
     }
-   private void ChangeSprite(Sprite newSprite)
-    {
-        spriteRenderer.sprite = newSprite;
-    }
+   
     public void Language(string language)
     {
         LocalizationManager.Language = language;

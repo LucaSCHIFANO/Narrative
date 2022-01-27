@@ -1,34 +1,237 @@
 Key,English,French
 Id_Play,"Play,start.","Jouer,lets go."
 Id_Quit,Quit,Quitter
-Id_L1_A,EN,parler de la semaine qui arrive
-Id_L1_B,,phrase neutre
-Id_L1_C,,parler du week end
-Id_L2_A,,L'année prochaine go college
-Id_L2_B,,Enfin les vaccances tu es contente ?
-Id_L2_C,,"trop cool ton dessin, c’était au zoo ?"
-Id_L3_A,,lui dire que tu es déçu mais qu'on a toujours les lettres pour parler
-Id_L3_B,,pourquoi as tu bougé
-Id_L3_C,,elle aurait du te le dire qu'on puisse faire un truc avant de ne plus se voir
-Id_L4_A,,XXX
-Id_L4_B,,XXX
-Id_L4_C,,cliquer sur les larmes de sa lettre et en parler
-Id_L5_A,,L'année prochaine tu vas commencer un taff
-Id_L5_B,,XXX
-Id_L5_C,,lui demander si elle va continuer l'art
-Id_L5_D,,Tu comprends et tu lui dis que au qu'a où tu es la si tu veux en parler
-Id_L6_A,,Peut être changer de taff et suivre ta passion
-Id_L6_B,,"faut que tu t’accroche, le monde du travail est pas facile"
-Id_L6_C,,tu aurais du continuer l'art
-Id_L7_A,,XXX
-Id_L7_B,,XXX
-Id_L7_C,,Lui parler de son pere alcoolique
-Id_L8_A,,Parler de la pluie et du beau temps
-Id_L8_B,,comment va ton père ?
-Id_L8_C,,Tu tiens a elle et tu ne veux pas qu'elle fasse la meme erreur
-Id_L8_D,,Tu t'excuse et tu en parleras plus
-Id_L9_A,,XXX
-Id_L9_B,,on continue les lettres ?
-Id_L9_C,,lui proposer de passer par mail pour parler plus souvent
-Id_L9_D,,on continue les lettres ?
-Id_L9_E,,pas de souci ahah
+Id_L1_A,EN,"Coucou Clara ! 
+Comment vas-tu ?  C’est ma première lettre. 
+Dommage que tu n’etais pas là hier, on a bien rigolé. 
+Oublie pas qu’on va au zoo  mercredi ! J’espère qu’on verra des lions.
+Bisous"
+Id_L1_B,,"Coucou Clara ! 
+Comment vas-tu ?  C’est ma première lettre. 
+Dommage que tu n’etais pas là hier, on a bien rigolé.
+C’est Henri qui a dû faire le gardien mais on a quand même gagné. 
+Et toi, comment était ton week-end ? Tu t’es bien amusée ?
+Oublie pas qu’on va au zoo  mercredi ! J’espère qu’on verra des lions.
+Bisous
+"
+Id_L1_C,,"Coucou Clara ! 
+Comment vas-tu ?  C’est ma première lettre. 
+Dommage que tu n’etais pas là hier, on a bien rigolé.
+J’ai aussi fais du dessin, je te montrerais demain. Je vais essayer de dessiner un lion mercredi quand on ira au zoo. Tu viendras?
+Bisous
+"
+Id_L2_A,,"Coucou Clara ! 
+C'était cool le zoo, pas vrai ? 
+Après les vacances c’est le collège, j'espère qu’on sera dans la même classe. 
+Et même voisin de table ! Bisous"
+Id_L2_B,,"Coucou Clara ! 
+C'était cool le zoo, pas vrai ? 
+Enfin les vacances ! Je vais à la mer avec mes parents.
+Et toi ? tu les passes avec ton père c’est ca ? Amuse toi bien !
+Bisous"
+Id_L2_C,,"Coucou Clara ! 
+C'était cool le zoo, pas vrai ? 
+Trop beau ton rhinocéros ! C’est aussi ton animal préféré ? 
+Les singes aussi étaient trop drôle, ils ressemblaient un peu à Henri.
+Bisous
+"
+Id_L3_A,,"Coucou Clara 
+Je ne savais pas que tu devais déménager. C’est trop nul, tu vas me manquer. 
+Les lettres vont servir à quelque chose du coup. Comme ca on ne perd pas contact
+Comment est ta nouvelle ville ? Tu aimes ton nouveau collège ? Tu as des copains ? 
+J’ai Henri dans ma classe, je suis très content ! Et les professeurs sont plutôt gentils.
+Bisous
+"
+Id_L3_B,,"Coucou Clara
+J’aurais aimé que tu me le dise avant de déménager, on aurait pu faire des trucs ensemble pendant les vacances. 
+Sinon tu aimes ton nouveau collège ? Tu as des copains ? 
+J’ai Henri dans ma classe, je suis très content ! Et les professeurs sont plutôt gentils.
+Bisous 
+"
+Id_L3_C,,"Coucou Clara 
+Je ne savais pas que tu devais déménager. C’est pour le travail de ton père ? 
+Comment est ta nouvelle ville ? Tu aimes ton nouveau collège ? Tu as des copains ? 
+J’ai Henri dans ma classe, je suis très content ! Et les professeurs sont plutôt gentils.
+Bisous
+"
+Id_L4_A,,"Coucou Clara
+Les cours se passent bien.  Le lycée est un peu loin de la maison mais j’y vais en vélo. Les gens sont différents du collège mais je préfère cette ambiance. 
+Bisous, porte toi bien "
+Id_L4_B,,"Coucou Clara
+J’ai trouvé un stage à mi -temps dans une petite supérette, je fais des économies pour plus tard ! Et sinon les cours se passent bien.  Le lycée est un peu loin de la maison mais j’y vais en vélo. Les gens sont différents du collège mais je préfère cette ambiance. 
+Bisous, porte toi bien 
+"
+Id_L4_C,,"Coucou Clara 
+J’ai bien reçu ta lettre. Tout va bien ? 
+Quelque chose ne va pas ? Sache que je suis là pour toi, si tu veux m’en parler. 
+On est amis.
+Sinon de mon côté, les cours se passent bien.  Le lycée est un peu loin de la maison mais j’y vais en vélo. Les gens sont différents du collège mais je préfère cette ambiance. 
+Bisous, porte toi bien 
+"
+Id_L5_A,,"Coucou Clara
+J’espère que tu ne m’en veux pas d’avoir parler de ces larmes. Sache juste que je suis là si tu veux en parler, je tiens à toi et je ne veux pas qu’il t’arrive de mauvaises choses. 
+Après le lycée je vais passer un concours pour devenir manager dans la supérette où je travaille à mi-temps. Et toi, comment va le travail ou les études ? Tu ne m'as pas trop parlé de ça. 
+Bisous, et courage !
+"
+Id_L5_B,,"Coucou Clara
+Comment vas-tu ? Personnellement c’est bientôt la fin du lycée. Mes résultats sont corrects, je n'ai pas trop peur pour le baccalauréat. 
+Et toi, comment va le travail ou les études ? Tu ne m'as pas trop parlé de ça.
+Bisous"
+Id_L5_C,,"Coucou Clara
+Comment vas-tu ? 
+Après le lycée je vais passer un concours pour devenir manager dans la supérette où je travaille à mi-temps. Et toi, comment va le travail ou les études ? Tu ne m'as pas trop parlé de ça. Tu continues l’art ? J’aimais bien recevoir tes dessins. 
+"
+Id_L5_D,,"Coucou Clara
+L’année prochaine ,après le lycée, je vais passer un concours pour devenir manager dans la supérette où je travaille à mi-temps. Le monde du travail s’ouvre à moi ! Et toi, comment va le travail ou les études ? Tu ne m'as pas trop parlé de ça. 
+Bisous
+"
+Id_L6_A,,"Salut Clara
+Le monde du travail n'est pas évident, c’est pareil pour moi, je galére un peu en ce moment. 
+Je sais que tu as arrêté le dessin mais peut-être que tu devrais revoir ce choix. Tu étais toujours contente quand tu dessinais.
+Je te donne juste mon avis, tu en fais ce que tu veux. Mais en tout cas, il n'y a pas de mauvais choix.  
+Bisous et courage ! 
+"
+Id_L6_B,,"Salut Clara
+Le monde du travail n'est pas évident, c’est pareil pour moi, je galére un peu en ce moment.
+Faut s'accrocher ! Tu vas finir par apprécier ton travail. Dis toi que tu fais ça pour plus tard.  
+Bisous et courage ! 
+"
+Id_L6_C,,"Salut Clara
+Le monde du travail n'est pas évident, c’est pareil pour moi, je galére un peu en ce moment. 
+Mais pourquoi as-tu arrêté l’art, je ne comprends pas. C'était pourtant ta passion ! Tu aurais dû continuer quand tu le pouvais, c’est dommage. 
+Bisous
+"
+Id_L7_A,,"Coucou Clara
+Comment vas-tu ? 
+Bisous
+"
+Id_L7_B,,"Coucou Clara
+Comment vas-tu ? 
+J’ai comme projet d’ouvrir ma propre supérette franchisée ! J’espère que tu passeras me voir pour l’ouverture, ou même avant. Ce serait super de reparler du bon temps. 
+Bisous, prends soin de toi.
+"
+Id_L7_C,,"Coucou Clara
+Désolé d’en parler de manière cru mais j’ai compris que ton père avait de sérieux problème d’alcool. J’ai l’impression que ça explique certaines choses qui se sont passées. 
+On peut être alcoolique s’en rendre compte donc c’est pour ca que je t’en parle. J’espère vraiment que ça va pour toi. C’est possible d’en parler plus en détails prochainement ? 
+Bisous, prends soin de toi."
+Id_L8_A,,"Coucou Clara
+Désolé, j’ai été un peu brutal dans mes propos concernant ton père. 
+Je sais que ça ne t’a pas plu mais il fallait que je te le dise. Je n’ai pas envie que tu finisses de la même façon. Il n’y a pas de honte à en parler. Je ne te juge pas, je tiens à toi. 
+J’aimerais qu’on se voit si tu es d’accord. 
+J’espère quand même que ça va un peu mieux depuis ma dernière lettre. 
+Bisous, prends soin de toi."
+Id_L8_B,,"Coucou Clara 
+Ma propre supérette va bientôt ouvrir ! Dans notre ville natale, en plein centre ville. 
+Et toi comment vas-tu ? Et ton père ? Ça fait très longtemps que je ne l’ai pas vu et que tu ne m’as pas parlé de lui. Il travaille toujours dans l’art ? 
+Bisous
+"
+Id_L8_C,,"Coucou Clara
+Désolé, j’ai été un peu brutal dans mes propos concernant ton père. Je regrette de t’avoir parlé comme ça. Je n’en parlerai plus. En tout cas, sache que je suis là au cas où. 
+J’espère quand même que ça va un peu mieux depuis ma dernière lettre. 
+Bisous, prends soin de toi. "
+Id_L8_D,,"Coucou Clara
+Ma propre supérette va bientôt ouvrir ! Dans notre ville natale, en plein centre ville. 
+L'ouverture se fait dans un bon mois, je t'enverrai une lettre avant avec la date si tu veux qu’on se voit à ce moment-là. J’espère que de ton côté tout va mieux. 
+Bisous
+"
+Id_L9_A,,"Coucou Clara
+J'espère que tu vas bien. Je ne t’ai pas vu pour l’ouverture de ma supérette. C'était très sympa, Henri est passé. Il a bien changé.
+Et toi comment tu vas ? 
+Bisous
+"
+Id_L9_B,,"Salut Clara ! 
+J’aimerai vraiment qu’on continue notre échange épistolaire mais j’aimerai aussi qu’on se revoit. Qu’en penses- tu ?  
+Bisous
+"
+Id_L9_C,,"Coucou Clara 
+Je ne sais pas si tu connais mais avec internet on peut s’envoyer ce qu'on appelle des e-mails. Ça nous permet de nous envoyer des messages bien plus vite. Ça te dirait qu’on essaye de se parler avec cette technologie ? 
+Bisous
+"
+Id_L9_D,,"Coucou Clara. 
+Pas de souci, en tout cas je n’en parlerai plus.
+Et sinon j'espère que tu vas bien. Je ne t’ai pas vu pour l’ouverture de ma supérette. C'était très sympa, Henri est passé. Il a bien changé.
+Et toi comment tu vas ? 
+Bisous
+"
+CLARA :  ,,
+Id_A1_A,,"Salut, ça fait plaisir de t’entendre,
+c’est sympa les lettres, et pour hier, j’étais chez mon père, j’ai pas pu venir… 
+Je serais là mercredi, et ça tombe bien j’adore les lions !
+Bisous."
+Id_A1_B,,"Salut, ça fait plaisir de t’entendre,
+c’est sympa les lettres, et pour hier, j’étais chez mon père, j’ai pas pu venir… 
+Henri faire le gardien? Le pauvre, il a réussi à en arrêter une au moins?
+Je serais là mercredi, et ça tombe bien j’adore les lions !
+Bisous.
+"
+Id_A1_C,,"Salut, ça fait plaisir de t’entendre,
+Ça avait l’air sympa hier de votre côté… J’étais chez mon père, il n’a pas voulu que je vienne…
+Tu t’es mis au dessin aussi? Je veux voir ça !
+Bisous."
+Id_A2_A,,"Oh tu as vu mon dessin? je gribouillais en hésitant quoi écrire. Pour tout te dire au début il ressemblait à un lion, mais c’est devenu un rhinocéros. 
+C’est méchant pour Henri ce que tu dis, mais ça m’a fait rire.
+Bientôt le collège, j’espère qu’on sera dans la même classe !
+Bisous aussi."
+Id_A2_B,,"Salut!
+Le zoo était super sympa, Henri a pas été très malin de s’approcher autant de la cage du lion, mais on s’est bien marré !
+Je serais avec mon père pour les grandes vacances, tu vas me manquer… Au moins on se retrouvera surement pour le collège !
+Bisous aussi."
+Id_A2_C,,"Salut!
+Le zoo était super sympa, Henri a pas été très malin de s’approcher autant de la cage du lion, mais on s’est bien marré !
+Je serais avec mon père pour les grandes vacances, tu vas me manquer… Tu vas à la mer? Moi je me retrouve à aller chez ma grand-mère dans la Creuse, je suis sûre que tu connais même pas de nom.
+Bisous aussi."
+Id_A3_A,,"Coucou,
+Oui je n’ai pas pu te prévenir, ça s’est décidé très rapidement, et je n’ai pas eu l’occasion de t’envoyer une lettre… Je suis plutôt loin de notre ancien collège.
+Celui dans lequel je vais a l’air particulier… Je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas tu as bien de la chance :(
+P.S : Je me suis aussi mise au dessin, en suivant des cours, j’ai vraiment bien progressé.
+Bisous"
+Id_A3_B,,"Coucou,
+Oui je n’ai pas pu te prévenir, ça s’est décidé très rapidement, et je n’ai pas eu l’occasion de t’envoyer une lettre… C’est une décision de papa, il a été bougé pour son travail, on a dû le suivre.
+La ville est un peu tristounette mais ça va. Le collège où je vais a l’air… particulier… et je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas, tu as bien de la chance.
+P.S : Je me suis aussi mise au dessin, en suivant des cours, j’ai vraiment bien progressé.
+Bisous"
+Id_A3_C,,"Coucou,
+Toi aussi tu vas me manquer ! Heureusement qu’on a ces lettres, tu as réussi à trouver ma nouvelle adresse comment?
+La ville est un peu tristounette mais ça va. Le collège où je vais a l’air… particulier… et je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas tu as bien de la chance :(
+Bisous"
+Id_A4_A,,"Coucou,
+Je suis désolé, j’ai dû abîmer ma lettre en renversant de l’eau dessus, ou ce sont les aléas de la poste qui ont fait ça. En tout cas je t’assure qu’il n’y a aucun souci de mon côté, vraiment je ne veux pas que tu te fasses du mouron pour moi, ça me rendrait encore plus triste.
+Les cours se passent bien, les jours s’enchainent et on avance comme on peut. Comme tu dis, l’ambiance est aussi bien différente de mon côté, tu me manques beaucoup.
+Bisous"
+Id_A4_B,,"Coucou,
+Les cours se passent bien, les jours s’enchainent et on avance comme on peut. Comme tu dis, l’ambiance est aussi bien différente de mon côté, tu me manques beaucoup.
+Bisous"
+Id_A4_C,,"Coucou,
+Bravo pour ton stage ! Tu économise pour quelque chose en particulier?
+Quant aux cours se passent bien, les jours s’enchainent et on avance comme on peut. Comme tu dis, l’ambiance est aussi bien différente de mon côté, tu me manques beaucoup.
+Bisous"
+Id_A5_A,,"Coucou,
+(là je sèche pour parler des larmes)
+Super ton concours de manager ! De mon côté je continue les études dessin,et je n’ai pas encore trouvé de travail, mais plus j’avance et plus j’ai l’impression de m’enfoncer, et de passer de difficulté en difficulté, je commence à lâcher. Mon père pense que je devrais trouver une autre voie. 
+Bisous !"
+Id_A5_B,,"Coucou !
+Super ton concours de manager ! De mon côté je continue les études dessin,et je n’ai pas encore trouvé de travail, mais plus j’avance et plus j’ai l’impression de m’enfoncer, et de passer de difficulté en difficulté, je commence à lâcher. Mon père pense que je devrais trouver une autre voie. 
+Bisous !"
+Id_A5_D,,"Coucou !
+Super ton concours de manager ! De mon côté je continue les études dessin,et je n’ai pas encore trouvé de travail, mais plus j’avance et plus j’ai l’impression de m’enfoncer, et de passer de difficulté en difficulté, je commence à lâcher. Mon père pense que je devrais trouver une autre voie. Je peux tout de même t’envoyer un dessin si tu y tiens.
+Bisous !"
+Id_A5_C,,"Coucou !
+Ne stress pas trop, tu vas l’avoir; ton BAC. De mon côté je continue les études dessin, et je n’ai pas encore trouvé de travail, mais plus j’avance et plus j’ai l’impression de m’enfoncer, et de passer de difficulté en difficulté, je commence à lâcher. Mon père pense que je devrais trouver une autre voie. 
+Bisous !"
+Id_A6_A,,"Salut,
+Accroche toi pour ton travail, tu verras tu vas y arriver ! Quant à mes dessins, ça devient compliqué de continuer, pour pleins de raisons… Mais je te fais confiance, je vais peut être essayer de m’y remettre, on verra bien.
+Courage à toi aussi et bisous"
+Id_A6_B,,"Salut,
+Pour l’instant je ne pense pas être capable de me mettre à apprécier mon travail, et le “plus tard” n’a pas l’air bien savoureux. Mais je m’accroche, heureusement qu’on a encore ces lettres…
+Courage à toi aussi et bisoux
+
+"
+Id_A6_C,,"Salut,
+Courage pour ton travail, mais de mon côté j’ai arrêté pour des raisons personnelles, je préfère pas rentrer dans les détails, si je pouvais j’aurais continué.
+Bisoux"
+Id_A7_A,,"(lettre un peu salée sur l’audace du type de parler de ça, est vener)"
+Id_A7_B,,"Est très salée, a autre chose à penser mais n’en parle pas"
+Id_A7_C,,"Est très salée, a autre chose à penser mais n’en parle pas"
+Id_A8_A,,
+Id_A8_B,,
+Id_A8_C,,
