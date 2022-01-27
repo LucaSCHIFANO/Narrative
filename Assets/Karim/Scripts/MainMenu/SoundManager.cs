@@ -1,35 +1,72 @@
+using UnityEngine.Audio;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] Slider volumeSlider;
+    public Sound[] sounds;
 
+    private static SoundManager _instance = null;
+    public static SoundManager Instance
+    {
+        get => _instance;
+    }
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        if (!PlayerPrefs.HasKey("musicVolume"))
+        Play("First");
+        
+    }
+    void Awake()
+    {
+        _instance = this;
+        foreach (Sound s in sounds)
         {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.outputAudioMixerGroup = s.audioMixerGroup;
+
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
         }
     }
 
-   public void ChangeVolume()
+    public void Play(string name)
     {
-        AudioListener.volume = volumeSlider.value;
-        Save();
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.Play();
     }
 
-    private void Load()
+    public IEnumerator PlayWDelay(string name, float time)
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume"); 
+        yield return new WaitForSeconds(time);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.Play();
     }
-    private void Save()
+
+    public void Stop(string name)
     {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.Stop();
     }
+}
+
+[System.Serializable]
+public class Sound
+{
+    public string name;
+    public AudioClip clip;
+    public AudioMixerGroup audioMixerGroup;
+    [Range(0f, 1f)]
+    public float volume = 0.1f;
+    [Range(-3f, 3f)]
+    public float pitch = 1.0f;
+    public bool mute = false;
+    public bool loop = false;
+
+    [HideInInspector]
+    public AudioSource source;
 }

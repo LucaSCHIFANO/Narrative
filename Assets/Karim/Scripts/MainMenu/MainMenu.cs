@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     public GameObject bg;
+    public bool sound;
+    public Image image;
+    public AudioMixer masterMixer;
+
+    public List<Sprite> soundSprite = new List<Sprite>();
    public void PlayGame()
    {
        Instantiate(bg, transform.position, transform.rotation, transform);
@@ -22,5 +29,21 @@ public class MainMenu : MonoBehaviour
     {
         yield return new WaitForSeconds(1.2f); 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
+    public void setSound()
+    {
+        sound = !sound;
+        if (sound)
+        {
+            image.sprite = soundSprite[0];
+            masterMixer.SetFloat("General", 0);
+        }
+        else
+        {
+            image.sprite = soundSprite[1];
+            masterMixer.SetFloat("General", -80);
+        }
     }
 }
