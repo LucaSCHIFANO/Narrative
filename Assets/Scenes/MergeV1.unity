@@ -29600,6 +29600,13 @@ MonoBehaviour:
   lancerList:
   - {fileID: 1702691738}
   - {fileID: 623313050}
+  - {fileID: 2136348686}
+  - {fileID: 357704773}
+  - {fileID: 164083598}
+  - {fileID: 1933593752}
+  - {fileID: 1479721740}
+  - {fileID: 937647885}
+  - {fileID: 143324439}
   theName: 
   numberOfLetterSend: 0
 --- !u!1 &1653331975
