@@ -12521,7 +12521,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: EmptySlot
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1051676816605762310, guid: 1afefb427d30e7242bf63cd0f048b441, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1afefb427d30e7242bf63cd0f048b441, type: 3}
 --- !u!224 &783377520 stripped
 RectTransform:
@@ -17131,6 +17132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60d0aea4f8e1dc46ab40aaa20bd9e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  newSprite: {fileID: 0}
 --- !u!4 &971183810
 Transform:
   m_ObjectHideFlags: 0

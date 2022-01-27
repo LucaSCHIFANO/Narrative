@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assets.SimpleLocalization;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class MultiLanguage : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
 
+    private bool menu;
     
     private void Awake()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            menu = true;
+        }
+
         
         LocalizationManager.Read();
         if (PlayerPrefs.GetString("language") == null)
