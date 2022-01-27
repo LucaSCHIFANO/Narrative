@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class S_ScrollingBG : MonoBehaviour
 {
@@ -74,9 +75,11 @@ public class S_ScrollingBG : MonoBehaviour
     public void showLetter()
     {
         doOnce += 1;
-        
-        Debug.Log(doOnce);
 
+        if (Letter.Instance.numberOfLetterSend >= 9)
+        {
+            SceneManager.LoadScene(2);
+        }
 
         if (doOnce == 1)
         {
