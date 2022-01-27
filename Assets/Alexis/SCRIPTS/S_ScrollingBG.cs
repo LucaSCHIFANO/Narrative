@@ -27,6 +27,8 @@ public class S_ScrollingBG : MonoBehaviour
 
     [SerializeField] private S_ListTexts checkList;
     public Avion avion;
+    
+    public GameObject bg;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +55,7 @@ public class S_ScrollingBG : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         
-        phase2.SetActive(false);
+        //phase2.SetActive(false);
         phase3.SetActive(true);
         receivePhase.SetActive(true);
         mail.scroll = this;
@@ -78,31 +80,47 @@ public class S_ScrollingBG : MonoBehaviour
 
         if (Letter.Instance.numberOfLetterSend >= 9)
         {
-            SceneManager.LoadScene(2);
-        }
-
-        if (doOnce == 1)
-        {
-            listLetter[0].SetActive(true);
-        }
-        else if(doOnce == 3)
-        {
-            listLetter[1].SetActive(true);
+            Instantiate(bg, phase3.transform.position, phase3.transform.rotation, phase3.transform);
+            StartCoroutine(waitToOpen());
         }
         else
         {
-            listLetter[2].SetActive(true);
+            
+            phase2.SetActive(false);
+            
+
+            if (doOnce == 1)
+            {
+                listLetter[0].SetActive(true);
+            }
+            else if (doOnce == 3)
+            {
+                listLetter[1].SetActive(true);
+            }
+            else
+            {
+                listLetter[2].SetActive(true);
 
 
 
-            int value = PlayerPrefs.GetInt("pathValue");
-            Debug.Log(value + " blablabblabalablablalb");
+                int value = PlayerPrefs.GetInt("pathValue");
+                Debug.Log(value + " blablabblabalablablalb");
 
-            //listLetter[2].transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = checkList.answers[value];
+                //listLetter[2].transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = checkList.answers[value];
 
-            listLetter[2].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>().Localize2(checkList.answers[value]);
+                listLetter[2].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
+                    .Localize2(checkList.answers[value]);
 
+            }
         }
+    }
+    
+    
+    
+    IEnumerator waitToOpen()
+    {
+        yield return new WaitForSeconds(1.2f); 
+        SceneManager.LoadScene(2);
     }
     
     

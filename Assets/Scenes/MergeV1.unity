@@ -4651,6 +4651,7 @@ MonoBehaviour:
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}
   avion: {fileID: 675518977}
+  bg: {fileID: 0}
 --- !u!114 &315219087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10005,6 +10006,7 @@ MonoBehaviour:
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}
   avion: {fileID: 675518977}
+  bg: {fileID: 0}
 --- !u!114 &640100432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17090,6 +17092,7 @@ MonoBehaviour:
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}
   avion: {fileID: 675518977}
+  bg: {fileID: 754615542503593437, guid: c293d16b95cb9334cbe8df94ee0c08b5, type: 3}
 --- !u!114 &970124852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31939,7 +31942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9746599, g: 0.9009434, b: 1, a: 0.69411767}
+  m_Color: {r: 0.9746599, g: 0.9009434, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

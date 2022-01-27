@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class S_CheckScore_END : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class S_CheckScore_END : MonoBehaviour
     [SerializeField] private GameObject fin4;
 
     [SerializeField] private int value;
+    
+    public GameObject bg;
     private void Awake()
     {
         value = PlayerPrefs.GetInt("friendValue");
@@ -34,11 +38,17 @@ public class S_CheckScore_END : MonoBehaviour
         {
             fin4.SetActive(true);
         }
+
+
+        StartCoroutine(waite());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator waite()
     {
+        yield return new WaitForSeconds(3f);
+        Instantiate(bg, transform.position, transform.rotation, transform);
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene(0);
         
     }
 }
