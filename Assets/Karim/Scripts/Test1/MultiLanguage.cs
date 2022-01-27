@@ -7,9 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class MultiLanguage : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
-
+    public Image image;
+    public List<Sprite> flags = new List<Sprite>();
     private bool menu;
     
     private void Awake()
@@ -40,25 +39,33 @@ public class MultiLanguage : MonoBehaviour
             case "English" :
                 LocalizationManager.Language = "English";
                 PlayerPrefs.SetString("language", "English");
+                image.sprite = flags[0];
                 PlayerPrefs.Save();
                 break;
             case "French":
                 LocalizationManager.Language = "French";
                 PlayerPrefs.SetString("language", "French");
                 PlayerPrefs.Save();
-                ChangeSprite(newSprite);
+                image.sprite = flags[1];
                 break;
 
         }
-    }
-   private void ChangeSprite(Sprite newSprite)
-    {
-        spriteRenderer.sprite = newSprite;
     }
     public void Language(string language)
     {
         LocalizationManager.Language = language;
         PlayerPrefs.SetString("language", language);
+        
+        switch (LocalizationManager.Language)
+        {
+            case "English" :
+                image.sprite = flags[0];
+                break;
+            case "French":
+                image.sprite = flags[1];
+                break;
+
+        }
         
     }
 }

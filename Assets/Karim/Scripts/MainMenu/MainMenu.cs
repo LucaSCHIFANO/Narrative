@@ -5,13 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject bg;
    public void PlayGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+   {
+       Instantiate(bg, transform.position, transform.rotation, transform);
+       StartCoroutine(waitToOpen());
+   }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+
+    IEnumerator waitToOpen()
+    {
+        yield return new WaitForSeconds(1.2f); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
