@@ -58,6 +58,8 @@ public class S_ScrollingBG : MonoBehaviour
         //phase2.SetActive(false);
         phase3.SetActive(true);
         receivePhase.SetActive(true);
+        SoundManager.Instance.Stop("PaperPlane2");
+        SoundManager.Instance.Play("MailBox1");
         mail.scroll = this;
         backToOrigin();
         resetAllDataMail();

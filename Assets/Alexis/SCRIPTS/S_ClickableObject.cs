@@ -19,6 +19,7 @@ public class S_ClickableObject : MonoBehaviour
     [SerializeField] private int step;
 
     private S_ListTexts callFunction;
+    [SerializeField] private string audioTxt;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +47,7 @@ public class S_ClickableObject : MonoBehaviour
         SaveValues();
         callFunction.AddNewSentence(textBase, pathS, friendS, step);
 
+        SoundManager.Instance.Play(audioTxt);
 
         //Destroy(this.gameObject);
     }

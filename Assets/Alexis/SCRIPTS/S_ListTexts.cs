@@ -149,6 +149,7 @@ public class S_ListTexts : MonoBehaviour
                 Debug.Log("CACA");
             }
             activeIt = true;
+            
             Debug.Log("Active");
 
 

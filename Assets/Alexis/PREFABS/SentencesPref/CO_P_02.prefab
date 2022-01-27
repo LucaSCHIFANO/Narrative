@@ -266,6 +266,7 @@ MonoBehaviour:
   friendS: 3
   pathS: 20
   step: 3
+  audioTxt: Binouze
 --- !u!114 &2560468978410479447
 MonoBehaviour:
   m_ObjectHideFlags: 0

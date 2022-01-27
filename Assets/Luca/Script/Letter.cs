@@ -106,6 +106,10 @@ public class Letter : MonoBehaviour
         numberOfLetterSend++;
         Debug.Log(numberOfLetterSend);
 
+        SoundManager.Instance.Play("PaperPlane1");
+        SoundManager.Instance.Play("PaperPlane2");
+
+
     }
 
     public void AvoidLastChoice()

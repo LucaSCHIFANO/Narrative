@@ -21,11 +21,13 @@ public class S_UI_Scale : MonoBehaviour
     public void OnClick()
     {
         EnterPointer();
+        SoundManager.Instance.Play("Papier2");
         StartCoroutine(Wait());
     }
     public void EnterPointer()
     {
         this.transform.localScale += scale;
+        SoundManager.Instance.Play("Papier1");
     }
 
     public void ExitEnter()

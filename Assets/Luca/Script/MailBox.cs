@@ -43,6 +43,7 @@ public class MailBox : MonoBehaviour
             image.sprite = open;
             notif.SetActive(false);
             spawnLetter();
+            SoundManager.Instance.Play("MailBox2");
         }
     }
 
@@ -54,7 +55,7 @@ public class MailBox : MonoBehaviour
         {
             float1 = Random.Range(0, 3);
         }
-
+        SoundManager.Instance.Play("Env1");
         var imE = enveloppe.GetComponent<Image>();
 
         imE.sprite = listEnv[float1];
@@ -69,6 +70,7 @@ public class MailBox : MonoBehaviour
         if (!once2)
         {
             once2 = true;
+            SoundManager.Instance.Play("Env2");
             StartCoroutine(open1());
         }
     }

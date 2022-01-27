@@ -132,8 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 46616707}
-  - component: {fileID: 46616708}
-  - component: {fileID: 46616709}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -159,53 +157,13 @@ RectTransform:
   - {fileID: 1332091965}
   - {fileID: 2075978243}
   m_Father: {fileID: 1119540334}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &46616708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46616706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446f1836cea256445830e99914b66229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bg: {fileID: 754615542503593437, guid: c293d16b95cb9334cbe8df94ee0c08b5, type: 3}
-  sound: 0
-  image: {fileID: 437161393}
-  masterMixer: {fileID: 24100000, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
-  soundSprite:
-  - {fileID: 21300000, guid: c69c2c12866f0354e807f4d8b3670757, type: 3}
-  - {fileID: 21300000, guid: a4a07cc53f53e4848b56a73ceda8e8bc, type: 3}
---- !u!114 &46616709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46616706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b115c2ab4604bd74480861507353f5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: First
-    clip: {fileID: 8300000, guid: a2ab3aeab992297408153faf595e3e30, type: 3}
-    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
-    volume: 0.1
-    pitch: 1
-    mute: 0
-    loop: 0
-    source: {fileID: 0}
 --- !u!1001 &143545550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,6 +261,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3becaaef5518cf34ba076c78fbf6f73e, type: 3}
+--- !u!1 &264034193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264034194}
+  - component: {fileID: 264034196}
+  - component: {fileID: 264034195}
+  m_Layer: 5
+  m_Name: BaseMainMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &264034194
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264034193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1119540334}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &264034195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264034193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b115c2ab4604bd74480861507353f5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: First
+    clip: {fileID: 8300000, guid: 4357acab64ff033439e3115634c021ff, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: Papier1
+    clip: {fileID: 8300000, guid: fa8fc1aab2f43bb43988de55df58351f, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Papier2
+    clip: {fileID: 8300000, guid: 73eb3ce58f92f89458a1bdc21d438223, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+--- !u!114 &264034196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264034193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446f1836cea256445830e99914b66229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bg: {fileID: 754615542503593437, guid: c293d16b95cb9334cbe8df94ee0c08b5, type: 3}
+  sound: 1
+  image: {fileID: 437161393}
+  masterMixer: {fileID: 24100000, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+  soundSprite:
+  - {fileID: 21300000, guid: c69c2c12866f0354e807f4d8b3670757, type: 3}
+  - {fileID: 21300000, guid: a4a07cc53f53e4848b56a73ceda8e8bc, type: 3}
 --- !u!1 &293430194
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +665,8 @@ GameObject:
   - component: {fileID: 437161394}
   - component: {fileID: 437161393}
   - component: {fileID: 437161392}
+  - component: {fileID: 437161396}
+  - component: {fileID: 437161395}
   m_Layer: 5
   m_Name: Sound
   m_TagString: Untagged
@@ -685,9 +738,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 46616708}
+      - m_Target: {fileID: 264034196}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: setSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 437161396}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -735,6 +800,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437161390}
   m_CullTransparentMesh: 1
+--- !u!114 &437161395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437161390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 437161396}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 437161396}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &437161396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437161390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +983,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1119540334}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -918,6 +1040,8 @@ GameObject:
   - component: {fileID: 741255949}
   - component: {fileID: 741255948}
   - component: {fileID: 741255947}
+  - component: {fileID: 741255951}
+  - component: {fileID: 741255950}
   m_Layer: 5
   m_Name: Language
   m_TagString: Untagged
@@ -1013,6 +1137,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 741255951}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &741255948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,6 +1187,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741255945}
   m_CullTransparentMesh: 1
+--- !u!114 &741255950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741255945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 741255951}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 741255951}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &741255951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741255945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &889300500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1276,7 @@ RectTransform:
   - {fileID: 293430195}
   - {fileID: 1209878305}
   m_Father: {fileID: 1119540334}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1515,6 +1708,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 264034194}
   - {fileID: 735728179}
   - {fileID: 46616707}
   - {fileID: 889300501}
@@ -1538,6 +1732,8 @@ GameObject:
   - component: {fileID: 1209878308}
   - component: {fileID: 1209878307}
   - component: {fileID: 1209878306}
+  - component: {fileID: 1209878310}
+  - component: {fileID: 1209878309}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1633,6 +1829,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1209878310}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1209878307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1671,6 +1879,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209878304}
   m_CullTransparentMesh: 1
+--- !u!114 &1209878309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209878304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1209878310}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1209878310}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1209878310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209878304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1271065963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +2102,8 @@ GameObject:
   - component: {fileID: 1346898404}
   - component: {fileID: 1346898403}
   - component: {fileID: 1346898402}
+  - component: {fileID: 1346898406}
+  - component: {fileID: 1346898405}
   m_Layer: 5
   m_Name: French
   m_TagString: Untagged
@@ -1920,6 +2187,18 @@ MonoBehaviour:
           m_StringArgument: French
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1346898406}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1346898403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1958,6 +2237,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346898400}
   m_CullTransparentMesh: 1
+--- !u!114 &1346898405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346898400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1346898406}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1346898406}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1346898406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346898400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399586760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,6 +2419,8 @@ GameObject:
   - component: {fileID: 1834135022}
   - component: {fileID: 1834135021}
   - component: {fileID: 1834135020}
+  - component: {fileID: 1834135024}
+  - component: {fileID: 1834135023}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2154,9 +2492,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 46616708}
+      - m_Target: {fileID: 264034196}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1834135024}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2204,6 +2554,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834135018}
   m_CullTransparentMesh: 1
+--- !u!114 &1834135023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834135018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1834135024}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1834135024}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1834135024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834135018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2002385646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,6 +2716,8 @@ GameObject:
   - component: {fileID: 2006546183}
   - component: {fileID: 2006546182}
   - component: {fileID: 2006546181}
+  - component: {fileID: 2006546185}
+  - component: {fileID: 2006546184}
   m_Layer: 5
   m_Name: 'English '
   m_TagString: Untagged
@@ -2392,6 +2801,18 @@ MonoBehaviour:
           m_StringArgument: English
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2006546185}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2006546182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,6 +2851,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006546179}
   m_CullTransparentMesh: 1
+--- !u!114 &2006546184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006546179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2006546185}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2006546185}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2006546185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006546179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2059405073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2920,8 @@ GameObject:
   - component: {fileID: 2059405077}
   - component: {fileID: 2059405076}
   - component: {fileID: 2059405075}
+  - component: {fileID: 2059405079}
+  - component: {fileID: 2059405078}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -2513,9 +2993,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 46616708}
+      - m_Target: {fileID: 264034196}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2059405079}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2563,6 +3055,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059405073}
   m_CullTransparentMesh: 1
+--- !u!114 &2059405078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059405073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2059405079}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2059405079}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2059405079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059405073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2075978243 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4833378137120471223, guid: 3becaaef5518cf34ba076c78fbf6f73e, type: 3}

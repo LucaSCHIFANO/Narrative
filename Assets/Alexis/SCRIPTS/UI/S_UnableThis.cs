@@ -20,5 +20,6 @@ public class S_UnableThis : MonoBehaviour
     public void EnableThis()
     {
         gameObject.GetComponent<Button>().interactable = false;
+        SoundManager.Instance.Play("Special");
     }
 }

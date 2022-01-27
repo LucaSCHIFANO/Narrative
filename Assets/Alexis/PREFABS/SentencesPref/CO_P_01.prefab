@@ -266,6 +266,7 @@ MonoBehaviour:
   friendS: -1
   pathS: 14
   step: 3
+  audioTxt: Tableau
 --- !u!114 &2560468978410479447
 MonoBehaviour:
   m_ObjectHideFlags: 0

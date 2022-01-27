@@ -266,6 +266,7 @@ MonoBehaviour:
   friendS: -2
   pathS: 8
   step: 2
+  audioTxt: Camion
 --- !u!114 &5057164474325253889
 MonoBehaviour:
   m_ObjectHideFlags: 0

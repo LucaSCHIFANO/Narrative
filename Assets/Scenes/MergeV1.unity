@@ -2645,8 +2645,9 @@ GameObject:
   - component: {fileID: 179147874}
   - component: {fileID: 179147877}
   - component: {fileID: 179147876}
+  - component: {fileID: 179147875}
   m_Layer: 0
-  m_Name: Manager_Score
+  m_Name: Manager_Score_&_Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2664,6 +2665,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a8cf02b6f83d64d8867425e6ec92a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &179147875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179147873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b115c2ab4604bd74480861507353f5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: First
+    clip: {fileID: 8300000, guid: 4357acab64ff033439e3115634c021ff, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: Papier1
+    clip: {fileID: 8300000, guid: fa8fc1aab2f43bb43988de55df58351f, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Papier2
+    clip: {fileID: 8300000, guid: 73eb3ce58f92f89458a1bdc21d438223, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Special
+    clip: {fileID: 8300000, guid: 4deb7ec986bee20429c4e72e12cefca0, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: PaperPlane1
+    clip: {fileID: 8300000, guid: 90834341f282fe349925316b0b264d8e, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: PaperPlane2
+    clip: {fileID: 8300000, guid: 3f620e8ec4505c5448e830d9ec4a3a07, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: MailBox1
+    clip: {fileID: 8300000, guid: 1998e8055305679439ffb7cb928d9e12, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: MailBox2
+    clip: {fileID: 8300000, guid: 4789b052f3602eb498972eb1b1c236ea, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Env1
+    clip: {fileID: 8300000, guid: 057ba849e1a236e439a61bf192d50643, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Env2
+    clip: {fileID: 8300000, guid: b739aa35a55f05b4caba4bd44cd834f2, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Camion
+    clip: {fileID: 8300000, guid: b7d55544d849abe48b2c399321a482b5, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Tableau
+    clip: {fileID: 8300000, guid: f9a8e2af81891cc4eb97d90bdcbaaf10, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Binouze
+    clip: {fileID: 8300000, guid: a7a68d7cca85c5f46b797d853d0a68e3, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: MailBox3
+    clip: {fileID: 8300000, guid: 4afc0de6ce5ec3a4ab41edb21e65b320, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Antenne
+    clip: {fileID: 8300000, guid: 46db2166afd6176489558aa64dfa5290, type: 3}
+    audioMixerGroup: {fileID: 24300002, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}
+    volume: 0.2
+    pitch: 1
+    mute: 0
+    loop: 0
+    source: {fileID: 0}
 --- !u!114 &179147876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3577,7 +3711,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 680, y: 150}
@@ -4638,7 +4772,7 @@ MonoBehaviour:
   - {fileID: 675518973}
   initialPosition: []
   pointBase: {fileID: 2001478937}
-  speed: 120000
+  speed: 5
   time: 0
   phase2: {fileID: 1307541281}
   phase3: {fileID: 1239483922}
@@ -4651,7 +4785,7 @@ MonoBehaviour:
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}
   avion: {fileID: 675518977}
-  bg: {fileID: 0}
+  bg: {fileID: 1685070906}
 --- !u!114 &315219087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7779,6 +7913,8 @@ GameObject:
   - component: {fileID: 510191026}
   - component: {fileID: 510191025}
   - component: {fileID: 510191024}
+  - component: {fileID: 510191028}
+  - component: {fileID: 510191027}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -7862,6 +7998,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 510191027}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &510191025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7900,6 +8048,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510191022}
   m_CullTransparentMesh: 1
+--- !u!114 &510191027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510191022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &510191028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510191022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &521056960
 GameObject:
   m_ObjectHideFlags: 0
@@ -9993,7 +10198,7 @@ MonoBehaviour:
   - {fileID: 675518973}
   initialPosition: []
   pointBase: {fileID: 2001478937}
-  speed: 120000
+  speed: 5
   time: 0
   phase2: {fileID: 1307541281}
   phase3: {fileID: 1239483922}
@@ -10006,7 +10211,7 @@ MonoBehaviour:
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}
   avion: {fileID: 675518977}
-  bg: {fileID: 0}
+  bg: {fileID: 1685070906}
 --- !u!114 &640100432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11135,15 +11340,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9596045, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b850ac46f238c3b418b9a747691f1376, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -16114,6 +16319,8 @@ GameObject:
   - component: {fileID: 939833500}
   - component: {fileID: 939833499}
   - component: {fileID: 939833498}
+  - component: {fileID: 939833502}
+  - component: {fileID: 939833501}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -16197,6 +16404,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 510191027}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &939833499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16235,6 +16454,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939833496}
   m_CullTransparentMesh: 1
+--- !u!114 &939833501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939833496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &939833502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939833496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &940031990
 GameObject:
   m_ObjectHideFlags: 0
@@ -16362,14 +16638,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68956923, g: 0.9811321, b: 0.9665684, a: 0.69803923}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b850ac46f238c3b418b9a747691f1376, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17079,7 +17355,7 @@ MonoBehaviour:
   - {fileID: 675518973}
   initialPosition: []
   pointBase: {fileID: 2001478937}
-  speed: 120000
+  speed: 5
   time: 0
   phase2: {fileID: 1307541281}
   phase3: {fileID: 1239483922}
@@ -17092,7 +17368,7 @@ MonoBehaviour:
   refListAnswers: {fileID: 96539566}
   checkList: {fileID: 96539567}
   avion: {fileID: 675518977}
-  bg: {fileID: 754615542503593437, guid: c293d16b95cb9334cbe8df94ee0c08b5, type: 3}
+  bg: {fileID: 1685070906}
 --- !u!114 &970124852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22611,6 +22887,8 @@ GameObject:
   - component: {fileID: 1237444499}
   - component: {fileID: 1237444498}
   - component: {fileID: 1237444497}
+  - component: {fileID: 1237444501}
+  - component: {fileID: 1237444500}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -22694,6 +22972,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 510191027}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1237444498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22732,6 +23022,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237444495}
   m_CullTransparentMesh: 1
+--- !u!114 &1237444500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237444495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1237444501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237444495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1239483922
 GameObject:
   m_ObjectHideFlags: 0
@@ -25388,6 +25735,8 @@ GameObject:
   - component: {fileID: 1379484151}
   - component: {fileID: 1379484150}
   - component: {fileID: 1379484149}
+  - component: {fileID: 1379484152}
+  - component: {fileID: 1379484153}
   m_Layer: 5
   m_Name: Confirm
   m_TagString: Untagged
@@ -25483,6 +25832,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1379484152}
+        m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1379484150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25521,6 +25882,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379484147}
   m_CullTransparentMesh: 1
+--- !u!114 &1379484152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379484147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f06e996e18e824b93c8417548e9a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1379484153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379484147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: EnterPointer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379484152}
+          m_TargetAssemblyTypeName: S_UI_Scale, Assembly-CSharp
+          m_MethodName: ExitEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1381004226
 GameObject:
   m_ObjectHideFlags: 0
@@ -29484,6 +29902,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680705242}
   m_CullTransparentMesh: 1
+--- !u!1 &1685070906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4833378137120471220, guid: 3becaaef5518cf34ba076c78fbf6f73e, type: 3}
+  m_PrefabInstance: {fileID: 1428914990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1693607633
 GameObject:
   m_ObjectHideFlags: 0
@@ -33811,8 +34234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -142.15002}
-  m_SizeDelta: {x: -120.98, y: -284.3}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_SizeDelta: {x: -120.98, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1978815075
 MonoBehaviour:
