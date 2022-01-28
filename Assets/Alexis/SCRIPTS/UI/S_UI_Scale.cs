@@ -5,12 +5,13 @@ using UnityEngine;
 public class S_UI_Scale : MonoBehaviour
 {
     Vector3 scale = new Vector3(0.1f, 0.1f, 0.1f);
-
-
+    Vector3 resetScale;
+    private bool startIsGo = false;
     // Start is called before the first frame update
     void Start()
     {
-
+        startIsGo = true;
+       resetScale = gameObject.transform.GetComponent<RectTransform>().localScale;
     }
 
     // Update is called once per frame
@@ -18,6 +19,21 @@ public class S_UI_Scale : MonoBehaviour
     {
 
     }
+    void OnEnable()
+    {
+        if (startIsGo == true)
+        {
+            gameObject.transform.GetComponent<RectTransform>().localScale = resetScale;
+        }
+
+
+    }
+
+    void OnDisable()
+    {
+
+    }
+
     public void OnClick()
     {
         EnterPointer();
@@ -26,13 +42,13 @@ public class S_UI_Scale : MonoBehaviour
     }
     public void EnterPointer()
     {
-        this.transform.localScale += scale;
+        gameObject.transform.GetComponent<RectTransform>().localScale += scale;
         SoundManager.Instance.Play("Papier1");
     }
 
     public void ExitEnter()
     {
-        this.transform.localScale -= scale;
+        gameObject.transform.GetComponent<RectTransform>().localScale -= scale;
 
     }
 
