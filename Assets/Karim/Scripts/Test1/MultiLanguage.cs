@@ -34,7 +34,7 @@ public class MultiLanguage : MonoBehaviour
         }
 
        
-        switch (LocalizationManager.Language)
+        switch (PlayerPrefs.GetString("language"))
         {
             case "English" :
                 LocalizationManager.Language = "English";
@@ -55,14 +55,19 @@ public class MultiLanguage : MonoBehaviour
     {
         LocalizationManager.Language = language;
         PlayerPrefs.SetString("language", language);
+        PlayerPrefs.Save();
         
-        switch (LocalizationManager.Language)
+        Debug.Log("language set");
+        
+        switch (language)
         {
             case "English" :
                 image.sprite = flags[0];
+                Debug.Log("to english");
                 break;
-            case "French":
+            default :
                 image.sprite = flags[1];
+                Debug.Log("to french");
                 break;
 
         }
