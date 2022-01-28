@@ -158,7 +158,8 @@ CLARA :  ,,
 Id_A1_A,,"Salut, ça fait plaisir de t’entendre,
 c’est sympa les lettres, et pour hier, j’étais chez mon père, j’ai pas pu venir… 
 Je serais là mercredi, et ça tombe bien j’adore les lions !
-Bisous."
+Bisous.
+"
 Id_A1_B,,"Salut, ça fait plaisir de t’entendre,
 c’est sympa les lettres, et pour hier, j’étais chez mon père, j’ai pas pu venir… 
 Henri faire le gardien? Le pauvre, il a réussi à en arrêter une au moins?
@@ -172,7 +173,8 @@ Bisous."
 Id_A2_A,,"Oh tu as vu mon dessin? je gribouillais en hésitant quoi écrire. Pour tout te dire au début il ressemblait à un lion, mais c’est devenu un rhinocéros. 
 C’est méchant pour Henri ce que tu dis, mais ça m’a fait rire.
 Bientôt le collège, j’espère qu’on sera dans la même classe !
-Bisous aussi."
+Bisous aussi.
+"
 Id_A2_B,,"Salut!
 Le zoo était super sympa, Henri a pas été très malin de s’approcher autant de la cage du lion, mais on s’est bien marré !
 Je serais avec mon père pour les grandes vacances, tu vas me manquer… Au moins on se retrouvera surement pour le collège !
@@ -183,9 +185,9 @@ Je serais avec mon père pour les grandes vacances, tu vas me manquer… Tu vas 
 Bisous aussi."
 Id_A3_A,,"Coucou,
 Oui je n’ai pas pu te prévenir, ça s’est décidé très rapidement, et je n’ai pas eu l’occasion de t’envoyer une lettre… Je suis plutôt loin de notre ancien collège.
-Celui dans lequel je vais a l’air particulier… Je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas tu as bien de la chance :(
+Celui dans lequel je vais a l’air particulier… Je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas tu as bien de la chance
 P.S : Je me suis aussi mise au dessin, en suivant des cours, j’ai vraiment bien progressé.
-Bisous"
+Bisous"
 Id_A3_B,,"Coucou,
 Oui je n’ai pas pu te prévenir, ça s’est décidé très rapidement, et je n’ai pas eu l’occasion de t’envoyer une lettre… C’est une décision de papa, il a été bougé pour son travail, on a dû le suivre.
 La ville est un peu tristounette mais ça va. Le collège où je vais a l’air… particulier… et je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas, tu as bien de la chance.
@@ -193,8 +195,8 @@ P.S : Je me suis aussi mise au dessin, en suivant des cours, j’ai vraiment bie
 Bisous"
 Id_A3_C,,"Coucou,
 Toi aussi tu vas me manquer ! Heureusement qu’on a ces lettres, tu as réussi à trouver ma nouvelle adresse comment?
-La ville est un peu tristounette mais ça va. Le collège où je vais a l’air… particulier… et je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas tu as bien de la chance :(
-Bisous"
+La ville est un peu tristounette mais ça va. Le collège où je vais a l’air… particulier… et je n’ai pas encore de nouveaux copains. Comment va Henri? En tout cas tu as bien de la chance 
+Bisous"
 Id_A4_A,,"Coucou,
 Je suis désolé, j’ai dû abîmer ma lettre en renversant de l’eau dessus, ou ce sont les aléas de la poste qui ont fait ça. En tout cas je t’assure qu’il n’y a aucun souci de mon côté, vraiment je ne veux pas que tu te fasses du mouron pour moi, ça me rendrait encore plus triste.
 Les cours se passent bien, les jours s’enchainent et on avance comme on peut. Comme tu dis, l’ambiance est aussi bien différente de mon côté, tu me manques beaucoup.
@@ -207,9 +209,9 @@ Bravo pour ton stage ! Tu économise pour quelque chose en particulier?
 Quant aux cours se passent bien, les jours s’enchainent et on avance comme on peut. Comme tu dis, l’ambiance est aussi bien différente de mon côté, tu me manques beaucoup.
 Bisous"
 Id_A5_A,,"Coucou,
-(là je sèche pour parler des larmes)
 Super ton concours de manager ! De mon côté je continue les études dessin,et je n’ai pas encore trouvé de travail, mais plus j’avance et plus j’ai l’impression de m’enfoncer, et de passer de difficulté en difficulté, je commence à lâcher. Mon père pense que je devrais trouver une autre voie. 
-Bisous !"
+Bisous !
+"
 Id_A5_B,,"Coucou !
 Super ton concours de manager ! De mon côté je continue les études dessin,et je n’ai pas encore trouvé de travail, mais plus j’avance et plus j’ai l’impression de m’enfoncer, et de passer de difficulté en difficulté, je commence à lâcher. Mon père pense que je devrais trouver une autre voie. 
 Bisous !"
@@ -240,8 +242,7 @@ C’est plutôt compliqué en ce moment chez moi, mais globalement je m’en sor
 En ce qui concerne ta supérette, je vais essayer de faire de mon mieux pour pouvoir venir, mais je ne te garanti rien
 
 "
-Id_A7_C,,"(lettre un peu salée sur l’audace du type de parler de ça, est vener)
-Alors pour une fois, tu dépasses les bornes… Tu penses peut être tout savoir de ma relation avec mon père et comprendre des choses, mais vraiment tu es à côté de la plaque. S’il te plait ne parle pas de ça sans en savoir plus.
+Id_A7_C,,"Alors pour une fois, tu dépasses les bornes… Tu penses peut être tout savoir de ma relation avec mon père et comprendre des choses, mais vraiment tu es à côté de la plaque. S’il te plait ne parle pas de ça sans en savoir plus.
 
 "
 Id_A8_A,,"Coucou,
