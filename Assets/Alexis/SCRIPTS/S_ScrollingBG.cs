@@ -57,12 +57,17 @@ public class S_ScrollingBG : MonoBehaviour
         
         //phase2.SetActive(false);
         phase3.SetActive(true);
+        onChangeScene();
         receivePhase.SetActive(true);
         SoundManager.Instance.Stop("PaperPlane2");
         SoundManager.Instance.Play("MailBox1");
         mail.scroll = this;
         backToOrigin();
         resetAllDataMail();
+
+
+
+
     }
 
 
@@ -84,6 +89,7 @@ public class S_ScrollingBG : MonoBehaviour
         {
             Instantiate(bg, phase3.transform.position, phase3.transform.rotation, phase3.transform);
             StartCoroutine(waitToOpen());
+
         }
         else
         {
@@ -135,9 +141,14 @@ public class S_ScrollingBG : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    void onChangeScene()
     {
-        
+        if (Letter.Instance.numberOfLetterSend >= 9)
+        {
+            Instantiate(bg, phase3.transform.position, phase3.transform.rotation, phase3.transform);
+            StartCoroutine(waitToOpen());
+        }
     }
 }
