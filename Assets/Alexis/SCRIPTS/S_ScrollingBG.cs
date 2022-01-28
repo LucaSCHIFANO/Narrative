@@ -101,21 +101,21 @@ public class S_ScrollingBG : MonoBehaviour
                 listLetter[0].SetActive(true);
                 
                 listLetter[0].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
-                    .Localize2(checkList.answers[value]);
+                    .Localize2(checkList.answers[PlayerPrefs.GetInt("osekour")]);
             }
             else if (doOnce == 3)
             {
                 listLetter[1].SetActive(true);
                 
                 listLetter[1].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
-                    .Localize2(checkList.answers[value]);
+                    .Localize2(checkList.answers[PlayerPrefs.GetInt("osekour")]);
             }
             else
             {
                 listLetter[2].SetActive(true);
 
                 listLetter[2].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
-                    .Localize2(checkList.answers[value]);
+                    .Localize2(checkList.answers[PlayerPrefs.GetInt("osekour")]);
 
             }
         }

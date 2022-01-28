@@ -26,6 +26,8 @@ public class ItemSentence : MonoBehaviour
     public int path;
     public int step;
 
+    public int saveId;
+
     private void Start()
     {
 
@@ -60,6 +62,7 @@ public class ItemSentence : MonoBehaviour
         {
             //Debug.Log("Audible, raconte moi une histoire");
             Letter.Instance.setNewImage(this ,gameObject.name);
+            PlayerPrefs.SetInt("osekour", saveId);
         }
         
         //image.color = baseColor;
@@ -73,6 +76,8 @@ public class ItemSentence : MonoBehaviour
         this.path = pathId;
         this.friendS = friendS;
         this.step = stepId;
+
+        saveId = pathId;
     }
 
 }

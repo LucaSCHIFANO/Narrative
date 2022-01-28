@@ -19295,9 +19295,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Salut, \xE7a fait plaisir de t\u2019entendre,\r\nc\u2019est sympa les
-    lettres, et pour hier, j\u2019\xE9tais chez mon p\xE8re, j\u2019ai pas pu venir\u2026
-    \r\nJe serais l\xE0 mercredi, et \xE7a tombe bien j\u2019adore les lions !\r\nBisous.\r\n"
+  m_text: "Coucou,\r\nJe suis d\xE9sol\xE9, j\u2019ai d\xFB ab\xEEmer ma lettre en
+    renversant de l\u2019eau dessus, ou ce sont les al\xE9as de la poste qui ont
+    fait \xE7a. En tout cas je t\u2019assure qu\u2019il n\u2019y a aucun souci de
+    mon c\xF4t\xE9, vraiment je ne veux pas que tu te fasses du mouron pour moi,
+    \xE7a me rendrait encore plus triste.\r\nLes cours se passent bien, les jours
+    s\u2019enchainent et on avance comme on peut. Comme tu dis, l\u2019ambiance est
+    aussi bien diff\xE9rente de mon c\xF4t\xE9, tu me manques beaucoup.\r\nBisous"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5f014aff7c52a6409ba15e42b944227, type: 2}
   m_sharedMaterial: {fileID: -6952362718365851393, guid: e5f014aff7c52a6409ba15e42b944227, type: 2}
