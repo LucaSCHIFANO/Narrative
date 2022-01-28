@@ -101,14 +101,14 @@ public class S_ScrollingBG : MonoBehaviour
                 listLetter[0].SetActive(true);
                 
                 listLetter[0].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
-                    .Localize2(checkList.answers[PlayerPrefs.GetInt("osekour")]);
+                    .Localize2(checkList.answers[0]);
             }
             else if (doOnce == 3)
             {
                 listLetter[1].SetActive(true);
                 
                 listLetter[1].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
-                    .Localize2(checkList.answers[PlayerPrefs.GetInt("osekour")]);
+                    .Localize2(checkList.answers[10]);
             }
             else
             {
