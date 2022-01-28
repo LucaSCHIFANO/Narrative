@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class MultiLanguage : MonoBehaviour
 {
     public Image image;
+    public Image image2Titre;
     public List<Sprite> flags = new List<Sprite>();
     private bool menu;
     
@@ -40,6 +41,7 @@ public class MultiLanguage : MonoBehaviour
                 LocalizationManager.Language = "English";
                 PlayerPrefs.SetString("language", "English");
                 image.sprite = flags[0];
+                image2Titre.sprite = flags[2];
                 PlayerPrefs.Save();
                 break;
             case "French":
@@ -47,6 +49,7 @@ public class MultiLanguage : MonoBehaviour
                 PlayerPrefs.SetString("language", "French");
                 PlayerPrefs.Save();
                 image.sprite = flags[1];
+                image2Titre.sprite = flags[3];
                 break;
 
         }
@@ -63,10 +66,12 @@ public class MultiLanguage : MonoBehaviour
         {
             case "English" :
                 image.sprite = flags[0];
+                image2Titre.sprite = flags[2];
                 Debug.Log("to english");
                 break;
             default :
                 image.sprite = flags[1];
+                image2Titre.sprite = flags[3];
                 Debug.Log("to french");
                 break;
 
