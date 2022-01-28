@@ -1294,15 +1294,31 @@ MonoBehaviour:
     path: 23
     step: 2
   answers:
-  - Id_Quit
-  - Id_Quit
-  - Id_Quit
-  - Id_Quit
-  - Id_Quit
-  - Id_Quit
-  - J'aime les framboises
-  - J'aime les framboises
-  - J'aime les framboises
+  - Id_A1_A
+  - Id_A1_B
+  - Id_A1_C
+  - Id_A2_A
+  - Id_A2_B
+  - Id_A2_C
+  - Id_A3_A
+  - Id_A3_B
+  - Id_A3_C
+  - Id_A4_A
+  - Id_A4_B
+  - Id_A4_C
+  - Id_A5_A
+  - Id_A5_B
+  - Id_A5_D
+  - Id_A5_C
+  - Id_A6_A
+  - Id_A6_B
+  - Id_A6_C
+  - Id_A7_A
+  - Id_A7_B
+  - Id_A7_C
+  - Id_A8_A
+  - Id_A8_B
+  - Id_A8_C
   refItem: {fileID: 783377523}
 --- !u!4 &96539568
 Transform:
@@ -1942,17 +1958,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148037925}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 651166967}
-  m_Father: {fileID: 2042205698}
-  m_RootOrder: 4
+  m_Father: {fileID: 225864057}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 461, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -102, y: 86}
   m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148037927
@@ -3372,7 +3388,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 148037926}
   m_Father: {fileID: 2042205698}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7236,9 +7253,9 @@ RectTransform:
   m_Father: {fileID: 1766271087}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -49, y: -50}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: 1007.3719, y: 339.1025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445764342
@@ -7301,12 +7318,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66
+  m_fontSize: 32
   m_fontSizeBase: 66
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 15
+  m_fontSizeMax: 32
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7337,10 +7354,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -103.882935, y: -109.35031, z: -90.21414, w: -101.1492}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &445764344
@@ -13988,9 +14005,9 @@ RectTransform:
   m_Father: {fileID: 2042205698}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: 1007.3719, y: 339.1025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &840690999
@@ -14013,10 +14030,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You received a letter !
+  m_text: "Salut, \xE7a fait plaisir de t\u2019entendre,\r\nc\u2019est sympa les
+    lettres, et pour hier, j\u2019\xE9tais chez mon p\xE8re, j\u2019ai pas pu venir\u2026
+    \r\nJe serais l\xE0 mercredi, et \xE7a tombe bien j\u2019adore les lions !\r\nBisous.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e5f014aff7c52a6409ba15e42b944227, type: 2}
+  m_sharedMaterial: {fileID: -6952362718365851393, guid: e5f014aff7c52a6409ba15e42b944227, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14040,12 +14059,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.75
-  m_fontSizeBase: 66.75
+  m_fontSize: 32
+  m_fontSizeBase: 66
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 15
+  m_fontSizeMax: 32
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -14076,7 +14095,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -103.882935, y: -109.35031, z: 2.7335835, w: -101.1492}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19251,9 +19270,9 @@ RectTransform:
   m_Father: {fileID: 2123552970}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: 1007.3719, y: 339.1025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065350240
@@ -19276,10 +19295,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You received a letter !
+  m_text: "Salut, \xE7a fait plaisir de t\u2019entendre,\r\nc\u2019est sympa les
+    lettres, et pour hier, j\u2019\xE9tais chez mon p\xE8re, j\u2019ai pas pu venir\u2026
+    \r\nJe serais l\xE0 mercredi, et \xE7a tombe bien j\u2019adore les lions !\r\nBisous.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e5f014aff7c52a6409ba15e42b944227, type: 2}
+  m_sharedMaterial: {fileID: -6952362718365851393, guid: e5f014aff7c52a6409ba15e42b944227, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19303,12 +19324,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.75
-  m_fontSizeBase: 66.75
+  m_fontSize: 32
+  m_fontSizeBase: 66
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 15
+  m_fontSizeMax: 32
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -19339,7 +19360,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -103.882935, y: -109.35031, z: -90.21414, w: -101.1492}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -31882,6 +31903,18 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2448980623137984766, guid: 3653682693178c54fa942f38e185e878, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448980623137984766, guid: 3653682693178c54fa942f38e185e878, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448980623137984766, guid: 3653682693178c54fa942f38e185e878, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448980623137984766, guid: 3653682693178c54fa942f38e185e878, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -31911,11 +31944,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2448980623137984766, guid: 3653682693178c54fa942f38e185e878, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1022
+      value: 1053
       objectReference: {fileID: 0}
     - target: {fileID: 2448980623137984766, guid: 3653682693178c54fa942f38e185e878, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -165
+      value: -113
       objectReference: {fileID: 0}
     - target: {fileID: 2448980623137984766, guid: 3653682693178c54fa942f38e185e878, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32090,6 +32123,10 @@ PrefabInstance:
     - target: {fileID: 2448980623137984767, guid: 8f970ea8086d7ef4ea65446a7d3270da, type: 3}
       propertyPath: m_Name
       value: CO_P_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448980623137984767, guid: 8f970ea8086d7ef4ea65446a7d3270da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f970ea8086d7ef4ea65446a7d3270da, type: 3}
@@ -35535,7 +35572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 461, y: 0}
+  m_AnchoredPosition: {x: 527, y: 63}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2034392032
@@ -35687,7 +35724,6 @@ RectTransform:
   - {fileID: 225864057}
   - {fileID: 840690998}
   - {fileID: 510191023}
-  - {fileID: 148037926}
   m_Father: {fileID: 1417686034}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

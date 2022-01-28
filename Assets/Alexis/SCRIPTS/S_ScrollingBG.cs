@@ -94,26 +94,25 @@ public class S_ScrollingBG : MonoBehaviour
         {
             
             phase2.SetActive(false);
-            
+            int value = PlayerPrefs.GetInt("pathValue");
 
             if (doOnce == 1)
             {
                 listLetter[0].SetActive(true);
+                
+                listLetter[0].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
+                    .Localize2(checkList.answers[value]);
             }
             else if (doOnce == 3)
             {
                 listLetter[1].SetActive(true);
+                
+                listLetter[1].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
+                    .Localize2(checkList.answers[value]);
             }
             else
             {
                 listLetter[2].SetActive(true);
-
-
-
-                int value = PlayerPrefs.GetInt("pathValue");
-                Debug.Log(value + " blablabblabalablablalb");
-
-                //listLetter[2].transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = checkList.answers[value];
 
                 listLetter[2].transform.GetChild(2).GetComponent<Assets.SimpleLocalization.LocalizedText>()
                     .Localize2(checkList.answers[value]);
