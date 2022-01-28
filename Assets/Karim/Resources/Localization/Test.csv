@@ -1,6 +1,7 @@
 Key,English,French
-Id_Play,"Play,start.","Jouer,lets go."
+Id_Play,Play,Jouer
 Id_Quit,Quit,Quitter
+,,
 Id_L1_A,EN,"Coucou Clara ! 
 Comment vas-tu ?  C’est ma première lettre. 
 Dommage que tu n’etais pas là hier, on a bien rigolé. 
@@ -229,9 +230,35 @@ Courage à toi aussi et bisoux
 Id_A6_C,,"Salut,
 Courage pour ton travail, mais de mon côté j’ai arrêté pour des raisons personnelles, je préfère pas rentrer dans les détails, si je pouvais j’aurais continué.
 Bisoux"
-Id_A7_A,,"(lettre un peu salée sur l’audace du type de parler de ça, est vener)"
-Id_A7_B,,"Est très salée, a autre chose à penser mais n’en parle pas"
-Id_A7_C,,"Est très salée, a autre chose à penser mais n’en parle pas"
-Id_A8_A,,
-Id_A8_B,,
-Id_A8_C,,
+Id_A7_A,,"Coucou,
+C’est plutôt compliqué en ce moment chez moi, mais globalement je m’en sors.
+Je préfère ne pas trop en parler si ça ne te dérange pas. Sinon le reste va bien de mon côté.
+
+"
+Id_A7_B,,"Coucou,
+C’est plutôt compliqué en ce moment chez moi, mais globalement je m’en sors.
+En ce qui concerne ta supérette, je vais essayer de faire de mon mieux pour pouvoir venir, mais je ne te garanti rien
+
+"
+Id_A7_C,,"(lettre un peu salée sur l’audace du type de parler de ça, est vener)
+Alors pour une fois, tu dépasses les bornes… Tu penses peut être tout savoir de ma relation avec mon père et comprendre des choses, mais vraiment tu es à côté de la plaque. S’il te plait ne parle pas de ça sans en savoir plus.
+
+"
+Id_A8_A,,"Coucou,
+Vraiment désolée de t’avoir parler comme ça. Tu as raison en vérité, je me suis vraiment mal comportée, que puis-je faire pour me faire pardonner? Je suis totalement pour qu’on se voit, à l’ouverture de ta supérette peut-être? j’ai cru entendre que tu avais ce projet en tête?
+Bisous, et merci encore.
+"
+Id_A8_B,,"Coucou,
+Effectivement ça fait un moment que nous n’avons pas parlé, j’ai arrêté l’art depuis longtemps et mon père va bien, il t’intéresse maintenant?
+En tout cas bravo pour ta supérette, j’espère qu’elle t'intéressera,
+bisous."
+Id_A8_C,,"Coucou,
+Vraiment désolée de t’avoir parler comme ça. Tu as raison en vérité, je me suis vraiment mal comportée, que puis-je faire pour me faire pardonner? Merci d’être là pour moi, j’espère vraiment que l’on continuera cet échange.
+Bisous, et merci encore. "
+Id_A8_D,,"Coucou,
+Ah super ! Bravo pour ta réussite. Je suis vraiment très contente de voir que tu réussi ce que tu fais de ton côté. J’espère qu’on pourra se voir en effet.
+Bisous!"
+Id_A9_A,,
+Id_A9_B,,
+Id_A9_C,,
+Id_A9_D,,
