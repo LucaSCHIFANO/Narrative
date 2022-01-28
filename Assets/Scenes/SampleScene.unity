@@ -348,6 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bg: {fileID: 754615542503593437, guid: c293d16b95cb9334cbe8df94ee0c08b5, type: 3}
+  canvas: {fileID: 1119540330}
   sound: 1
   image: {fileID: 437161393}
   masterMixer: {fileID: 24100000, guid: b4e9142a6dd1aea4f9dd302d20ff5ad5, type: 2}

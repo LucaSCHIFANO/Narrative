@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public GameObject bg;
+    public GameObject canvas;
+    
     public bool sound;
     public Image image;
     public AudioMixer masterMixer;
@@ -15,7 +17,7 @@ public class MainMenu : MonoBehaviour
     public List<Sprite> soundSprite = new List<Sprite>();
    public void PlayGame()
    {
-       Instantiate(bg, transform.position, transform.rotation, transform);
+       Instantiate(bg, canvas.transform.position, canvas.transform.rotation, canvas.transform);
        StartCoroutine(waitToOpen());
    }
 
