@@ -2391,9 +2391,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 741255948}
+  image2Titre: {fileID: 1332091966}
   flags:
   - {fileID: 21300000, guid: c785ecf4d717b24409e6af6159e18f3c, type: 3}
   - {fileID: 21300000, guid: 00917ea545c96ad4cbff8aa435120aea, type: 3}
+  - {fileID: 21300000, guid: 747b245da0fbba24290317a4ae35d394, type: 3}
+  - {fileID: 21300000, guid: c5822a3f593d643488b7dd73ca9f4b01, type: 3}
 --- !u!4 &1564873024
 Transform:
   m_ObjectHideFlags: 0
